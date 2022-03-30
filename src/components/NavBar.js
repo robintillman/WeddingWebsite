@@ -1,66 +1,62 @@
 import React from 'react'
-import CustomBtn from './CustomBtn'
-import logo from '../logo.svg'
-import logoMobile from '../logoMobile.svg'
-import {Toolbar, Typography} from '@material-ui/core'
-import {makeStyles} from "@material-ui/core/styles"
+import { useState } from 'react';
+
+import { NavLink } from 'react-router-dom';
+
+import { makeStyles, AppBar, Toolbar, Typography } from '@material-ui/core';
 
 const styles = makeStyles({
-    bar:{
+    appBar: {
+        background: '#f9f9f9',
+        width: '100%'
+    },
+    toolBar:{
         paddingTop: "1.15rem",
-        backgroundColor: "#fff",
-        ['@media (max-width:780px)']: {
-            flexDirection: "column"
-        }
-    },
-    logo: {
-        width: "15%",
-        ['@media (max-width:780px)']: {
-            display: "none"
-        }
-    },
-    logoMobile:{
-        width: "100%",
-        display: "none",
-        ['@media (max-width:780px)']: {
-            display: "inline-block"
-        }
+        background: '#f9f9f9',
+        ['@media (max-width:780px)']: { 
+           flexDirection: "column"
+          }
     },
     menuItem: {
-        cursor: "pointer",
-        flexGrow: 1,
+        flexGrow: 1
+    },
+    navLink: {
+        color: "black",
+        textDecoration: "none",
         "&:hover": {
-            color: "#4f25c8"
+            color: "#b08700"
         },
-        ['@media (max-width:780px)']: {
-            paddingBottom: "1rem"
-        }
     }
-})
+});
 
 function NavBar() {
-    const classes = styles()
+    const classes = styles();
+    const [isAppBarOpen, setIsAppBarOpen] = useState(false);
+
     return (
-        <Toolbar position="sticky" color="rgba(0, 0, 0, 0.87)" className={classes.bar}>
-            <img src={logo} className={classes.logo}/>
-            <img src={logoMobile} className={classes.logoMobile}/>
-            <Typography variant="h6" className={classes.menuItem}>
-                About
-            </Typography>
-            <Typography variant="h6" className={classes.menuItem}>
-                Blog
-            </Typography>
-            <Typography variant="h6" className={classes.menuItem}>
-                Careers
-            </Typography>
-            <Typography variant="h6" className={classes.menuItem}>
-                Demos
-            </Typography>
-            <Typography variant="h6" className={classes.menuItem}>
-                Contact Us
-            </Typography>
-            <CustomBtn txt="Trial Our Product"/>
-        </Toolbar>
+        <AppBar
+            className={classes.appBar}
+            elevation={0}
+        >
+            <Toolbar>
+                <Typography className={classes.menuItem} variant="h6" component='div' />
+                <Typography className={classes.menuItem} variant="h6" component='div'>
+                    <NavLink to="/" className={classes.navLink}>Välkommen</NavLink> 
+                </Typography>
+                <Typography className={classes.menuItem} variant="h6" component='div'>  
+                    <NavLink to="/vigsel" className={classes.navLink}>Vigsel</NavLink>
+                </Typography>
+                <Typography className={classes.menuItem} variant="h6" component='div'>
+                    <NavLink to="/middagochfest" className={classes.navLink}>Middag & fest</NavLink>
+                </Typography>
+                <Typography className={classes.menuItem} variant="h6" component='div'>
+                    <NavLink to="/onskelista" className={classes.navLink}>Önskelista</NavLink>
+                </Typography>
+                <Typography className={classes.menuItem} variant="h6" component='div'>
+                    <NavLink to="/osa" className={classes.navLink}>O.S.A.</NavLink>
+                </Typography> 
+            </Toolbar>
+        </AppBar>
     )
 }
 
