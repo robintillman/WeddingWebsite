@@ -1,22 +1,17 @@
 import React from 'react'
 
-import { makeStyles } from '@material-ui/core';
+import { makeStyles, Grid, Paper } from '@material-ui/core';
 
-import NavBar from './NavBar';
+import NavBar from './Navbar/NavBar';
 import Footer from './Footer';
 
-const styles = makeStyles((theme) => {
-    return {
-        root: {
-            display: 'flex',
-            marginRight: '10%',
-            marginLeft: '10%'
-        },
-        page: {
-            background: '#f9f9f9',
-            width: '100%'
-        },
-        toolbar: theme.mixins.toolbar
+const styles = makeStyles({
+    mainContent: {
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        padding: "5rem"
     }
 });
 
@@ -24,19 +19,32 @@ function Layout({ children }) {
     const classes = styles();
 
     return (
-        <div className={classes.root}>
+        <Grid container spacing={2} direction="column">
             {/* Navigation */}
-            <NavBar />
+            <Grid item xs={12} container>
+                <Grid item xs={0} md={1} />
+                <Grid item xs={12} md={10} >
+                    <NavBar />
+                </Grid>
+                <Grid item xs={0} md={1}  />
+            </Grid>
 
             {/* Main content */}
-            <div className={classes.page}>
-                <div className={classes.toolbar}></div>
-                { children }
-            </div>
-
-            {/* Footer */}
-        </div>
-    );
+            <Grid item xs={12} container>
+                <Grid item xs={0} md={1} />
+                <Grid item xs={12} md={10} >
+                    <Paper className={classes.mainContent}>
+                        { children }
+                    </Paper>
+                </Grid>
+                <Grid item xs={0} md={1}  />
+            </Grid>
+            
+            <Grid item xs={12} container>
+                <Footer />
+            </Grid>
+        </Grid>
+    )
 }
 
 export default Layout

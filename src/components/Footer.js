@@ -1,24 +1,24 @@
 import React from 'react'
+import { makeStyles, Typography, Grid, Divider } from '@material-ui/core';
+import CountDownClock from '../components/CountDownClock/CountDownClock';
 
-import { makeStyles, Divider, Box, Container, Grid, Paper } from '@material-ui/core';
-
-import WeddingCountdown from './WeddingCountdown';
+const styles = makeStyles({
+    container: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
+    }
+});
 
 function Footer() {
+    const classes = styles();
+    
     return (
-        <Footer>
-            <Box>
-                <Container>
-                    <Grid container>
-                        <Grid item xs={12}>
-                            <Divider /> 
-                        </Grid>
-                    </Grid>
-                    
-                    <WeddingCountdown /> 
-                </Container>
-            </Box>
-        </Footer>
+        <Grid item spacing={0} container>
+            <Grid item xs={12} container>
+                <CountDownClock />
+            </Grid>
+        </Grid>
     )
 }
 

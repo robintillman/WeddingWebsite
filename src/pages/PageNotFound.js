@@ -1,19 +1,31 @@
 import React from 'react';
+import { makeStyles, Grid } from '@material-ui/core';
+import Map from '../components/Map/Map';
+import PageNotFoundImage from '../404.jpg';
 
-import { Typography, makeStyles, Grid, Paper } from '@material-ui/core';
+const styles = makeStyles({
+  image: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundImage: `url(${PageNotFoundImage})`,
+    backgroundPosition: 'center', 
+    backgroundSize: 'cover', 
+    backgroundRepeat: 'no-repeat',
+    maxWidth: '100%',
+    height: '100vh',
+    borderRadius: 5,
+    display: 'flex'
+  }
+});
 
 function PageNotFound() {
-  return (
-    <Grid container spacing={0}>
-        <Grid item xs={12}>
-            <Paper>
-                <Typography variant="h6" color="secondary">
-                    ERROR 404 - PAGE NOT PageNotFound
-                </Typography>
-            </Paper>
+    const classes = styles();
+    
+    return (
+        <Grid item spacing={0} container>
+            <Grid item xs={12} className={classes.image} />
         </Grid>
-    </Grid>
-  )
+    )
 }
 
 export default PageNotFound
