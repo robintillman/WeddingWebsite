@@ -19,7 +19,7 @@
   
   .Navbar > .nav-items > a:hover {
     opacity: 1;
-    color: #dea916;
+    color: #ba5625;
   }
   
   .Navbar > .nav-items > a::before {
