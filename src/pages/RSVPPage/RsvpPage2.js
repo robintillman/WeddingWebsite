@@ -46,6 +46,10 @@ function RsvpPage() {
               <input type="text" className="form-control" placeholder="Telefonnummer" name="phonenumber" />
             </div>
             <div className="col-8 form-group pt-2 mx-auto">
+              Hotellrum
+              <input type="checkbox" className="form-control" name="doWantHotelRoom" />
+            </div>
+            <div className="col-8 form-group pt-2 mx-auto">
               <textarea className="form-control" id="" cols="30" rows="8" placeholder="Allergier, specialkost, etc." name="message" />
             </div>
             <div className="col-8 form-group pt-2 mx-auto">

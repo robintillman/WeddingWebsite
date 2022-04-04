@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles, Grid, Typography } from '@material-ui/core';
 import Map from '../components/Map/Map';
-import NorrtaljeKyrka from '../NorrtaljeKyrka.jpg';
+import NorrtaljeKyrka from '../resources/NorrtaljeKyrka.jpg';
 
 const styles = makeStyles({
   container: {

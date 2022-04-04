@@ -1,7 +1,6 @@
 import React from 'react';
 import { makeStyles, Grid } from '@material-ui/core';
-import Map from '../components/Map/Map';
-import PageNotFoundImage from '../404.jpg';
+import PageNotFoundImage from '../resources/404.jpg';
 
 const styles = makeStyles({
   image: {

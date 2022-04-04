@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles, Grid, Typography } from '@material-ui/core';
 import Map from '../components/Map/Map';
-import FurusundPhoto from '../FurusundPhoto.jpg';
+import FurusundPhoto from '../resources/FurusundPhoto.jpg';
 
 const styles = makeStyles({
   container: {

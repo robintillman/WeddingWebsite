@@ -1,5 +1,5 @@
 import React from 'react';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import './App.css';
 
@@ -8,10 +8,10 @@ import HomePage from './pages/HomePage';
 import MarriagePage from './pages/MarriagePage';
 import DinnerPartyPage from './pages/DinnerPartyPage';
 import WishlistPage from './pages/WishlistPage';
-import RsvpPage from './pages/RsvpPage';
+import RsvpPage from './pages/RSVPPage/RsvpPage';
 import PageNotFound from './pages/PageNotFound';
 
-const theme = createMuiTheme({
+const theme = createTheme({
     palette: {
       primary: {
         main:"#000000",
