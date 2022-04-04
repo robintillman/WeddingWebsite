@@ -10,6 +10,13 @@
     font-weight: 500;
 }
 
+.hrContainer {
+	border: 1px solid #dea916;
+	border-radius: 5px;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+
 .contact-box{
 	justify-content: center;
 	align-items: center;
@@ -60,6 +67,7 @@ textarea{
 	outline: none;
 	cursor: pointer;
 	transition: .3s;
+	border-radius: 5px;
 }
 
 .btn:hover{

@@ -1,4 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState, } from 'react'
+import { Typography, Grid } from '@material-ui/core';
 import './CountDownClock.css';
 
 function CountDownClock() {
@@ -42,30 +43,30 @@ function CountDownClock() {
     });
 
     return (
-        <section className="timer-container">
-            <section  className="timer">
-                <div>
-                    <section>
-                        <p>{timerDays}</p>
-                        <p><small>Dagar</small></p>
-                    </section>
-                    <span>:</span>
-                    <section>
-                        <p>{timerHours}</p>
-                        <p><small>Timmar</small></p>
-                    </section>
-                    <span>:</span>
-                    <section>
-                        <p>{timerMinutes}</p>
-                        <p><small>Minuter</small></p>
-                    </section>
-                    <span>:</span>
-                    <section>
-                        <p>{timerSeconds}</p>
-                        <p><small>Sekunder</small></p>
-                    </section>
-                </div>
-            </section>
+        <section  className="timer">
+            <Grid container>
+                <Grid item md={2} />
+                <Grid className="unit" item xs={12} md={2}>
+                    <Typography>{timerDays}</Typography>
+                    <Typography>Dagar</Typography>
+                </Grid>
+                <span></span>
+                <Grid className="unit" item xs={12} md={2}>
+                    <Typography>{timerHours}</Typography>
+                    <Typography>Timmar</Typography>
+                </Grid>
+                <span></span>
+                <Grid className="unit" item xs={12} md={2}>
+                    <Typography>{timerMinutes}</Typography>
+                    <Typography>Minuter</Typography>
+                </Grid>
+                <span></span>
+                <Grid className="unit" item xs={12} md={2}>
+                    <Typography>{timerSeconds}</Typography>
+                    <Typography>Sekunder</Typography>
+                </Grid>
+                <Grid item md={2} />
+            </Grid>
         </section>
     )
 }

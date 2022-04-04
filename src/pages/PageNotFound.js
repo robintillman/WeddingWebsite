@@ -8,7 +8,7 @@ const styles = makeStyles({
     alignItems: 'center',
     backgroundImage: `url(${PageNotFoundImage})`,
     backgroundPosition: 'center', 
-    backgroundSize: 'cover', 
+    backgroundSize: 'contain', 
     backgroundRepeat: 'no-repeat',
     maxWidth: '100%',
     height: '100vh',

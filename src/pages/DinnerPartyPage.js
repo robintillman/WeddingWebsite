@@ -1,13 +1,12 @@
 import React from 'react';
-import { makeStyles, Grid, Typography } from '@material-ui/core';
+import { makeStyles, Grid, Typography, Divider } from '@material-ui/core';
 import Map from '../components/Map/Map';
 import FurusundPhoto from '../resources/FurusundPhoto.jpg';
 
 const styles = makeStyles({
   container: {
       display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center'
+      justifyContent: 'center'
   },
   image: {
     justifyContent: 'center',
@@ -30,6 +29,10 @@ const styles = makeStyles({
     width: '100%',
     justifyContent: 'center',
     alignItems: 'center'
+  },
+  divider: {
+    marginBottom: '15px',
+    marginTop: '10px'
   }
 });
 
@@ -41,8 +44,11 @@ function DinnerPartyPage() {
           <Grid item xs={12} className={classes.image} />
           <Grid item xs={12}>
             <Typography variant="h3" className={classes.container}>
-                Middag & fest
+              Middag & fest
             </Typography>
+          </Grid>
+          <Grid item xs={12}>
+            <Divider className={classes.divider}/>
           </Grid>
           <Grid item xs={12} className={classes.text}>
             <p>

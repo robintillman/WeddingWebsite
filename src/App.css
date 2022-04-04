@@ -1,6 +1,6 @@
 .App {list-style-type: none;
-  min-height: 100vh;
   text-align: center;
+  min-height:100%;
 }
 
 .App-logo {

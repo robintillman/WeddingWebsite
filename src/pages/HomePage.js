@@ -1,11 +1,15 @@
 import React from 'react';
-import { makeStyles, Typography, Grid } from '@material-ui/core';
+import { makeStyles, Typography, Grid, Divider } from '@material-ui/core';
 
 const styles = makeStyles({
     container: {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'
+    },
+    divider: {
+      marginBottom: '15px',
+      marginTop: '10px'
     }
 });
   
@@ -18,6 +22,9 @@ function HomePage() {
                 <Typography variant="h3" className={classes.container}>
                     VI SKA GIFTA OSS!
                 </Typography>
+            <Grid item xs={12}>
+                <Divider className={classes.divider}/>
+            </Grid>
             </Grid>
             <Grid item xs={12}>
             <Typography variant="h6" className={classes.container}>

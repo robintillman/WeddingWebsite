@@ -12,11 +12,10 @@ const styles = makeStyles({
         backgroundRepeat: 'no-repeat'
       },
     mainContent: {
-        display: "flex",
+        minHeight: '75vh',
         flexDirection: "column",
-        justifyContent: "center",
         alignItems: "center",
-        padding: "5rem"
+        padding: "3rem"
     }
 });
 
@@ -24,31 +23,23 @@ function Layout({ children }) {
     const classes = styles();
 
     return (
-        <Grid container spacing={2} direction="column">
+        <div>
             {/* Navigation */}
-            <Grid item xs={12} container>
-                <Grid item md={1} />
-                <Grid item xs={12} md={10} >
-                    <NavBar />
-                </Grid>
-                <Grid item md={1}  />
-            </Grid>
+            <NavBar />
 
             {/* Main content */}
-            <Grid  className={classes.background} item xs={12} container>
-                <Grid item md={1} />
-                <Grid item xs={12} md={10} >
+            <Grid container className={classes.background}>
+                <Grid item xs={1} />
+                <Grid item xs={10}>
                     <Paper className={classes.mainContent}>
                         { children }
                     </Paper>
                 </Grid>
-                <Grid item md={1}  />
+                <Grid item xs={1}  />
             </Grid>
             
-            <Grid item xs={12} container>
-                <Footer />
-            </Grid>
-        </Grid>
+            <Footer />
+        </div>
     )
 }
 

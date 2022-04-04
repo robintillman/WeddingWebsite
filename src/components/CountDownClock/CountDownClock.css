@@ -1,33 +1,16 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-.timer-container {
-    width: 100vw;
-}
 
 .timer {
-    background: #dea916;
     display: flex;
-    flex: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 7em;
-    padding-top: 2em;
+    background: #dea916;
+    padding-bottom: 3em;
+    padding-top: 3em;
+    bottom: 0;
 }
 
-.timer div:first-child {
+.unit {
     color: #f9f9f9;
-    text-align: center;
-}
-
-.timer div:last-child {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    margin-top: 3em;
-    padding: 3em;
     text-align: center;
 }
 
@@ -39,6 +22,5 @@ section p:first-child, .timer div:last-child span {
     .timer div:last-child {
         margin-left: 2em;
         margin-right: 2em;
-        padding: 3em 1em;
     }
 }

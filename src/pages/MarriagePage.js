@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, Grid, Typography } from '@material-ui/core';
+import { makeStyles, Grid, Typography, Divider } from '@material-ui/core';
 import Map from '../components/Map/Map';
 import NorrtaljeKyrka from '../resources/NorrtaljeKyrka.jpg';
 
@@ -25,6 +25,10 @@ const styles = makeStyles({
     width: '100%',
     justifyContent: 'center',
     alignItems: 'center'
+  },
+  divider: {
+    marginBottom: '15px',
+    marginTop: '10px'
   }
 })
 
@@ -36,8 +40,11 @@ function MarriagePage() {
           <Grid item xs={12} className={classes.image} />
           <Grid item xs={12}>
             <Typography variant="h3" className={classes.container}>
-                Vigsel
+              Vigsel
             </Typography>
+            <Grid item xs={12}>
+              <Divider className={classes.divider}/>
+            </Grid>
           </Grid>
           <Grid item xs={12} className={classes.text}>
             <p>

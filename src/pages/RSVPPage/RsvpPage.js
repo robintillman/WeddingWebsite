@@ -1,13 +1,18 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-import { makeStyles, Typography, Grid } from '@material-ui/core';
+import { makeStyles, Typography, Grid, Divider } from '@material-ui/core';
 import './RsvpPage.css';
+import './RadioButton.css';
 
 const styles = makeStyles({
     container: {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'
+    },
+    divider: {
+      marginBottom: '15px',
+      marginTop: '10px'
     }
 });
 
@@ -34,6 +39,9 @@ function RsvpPage() {
             O.S.A.
         </Typography>
       </Grid>
+      <Grid item xs={12}>
+        <Divider className={classes.divider}/>
+      </Grid>
       <Grid className="body" item xs={12}>
         <form onSubmit={sendEmail} className={classes.container}>
           <div className="contact-box">
@@ -42,12 +50,6 @@ function RsvpPage() {
             </Grid>
             <Grid item xs={12}>
               <input type="text" className="field" placeholder="Namn på samtliga gäster" name="name" required />
-            </Grid>
-            <Grid item xs={12}>
-              <span className="details">Önskar betala för hotellrum</span>
-            </Grid>
-            <Grid item xs={12}>
-              <input type="checkbox" className="checkbox" name="doWantHotelRoom" />
             </Grid>
             <Grid item xs={12}>
               <span className="details">E-postadress</span>
@@ -67,6 +69,23 @@ function RsvpPage() {
             <Grid item xs={12}>
               <textarea placeholder="Allergier, specialkost, etc." className="field" name="message" />
             </Grid>
+            <div className="hrContainer">
+              <Grid item xs={12}>
+                <span className="details">Är du intresserad av hotellrum till förmånligt pris?</span>
+              </Grid>
+              <Grid item xs={12}>
+                <div class="inputGroup">
+                  <input id="radio1" name="radio" type="radio" checked />
+                  <label for="radio1">Jag är intresserad!</label>
+                </div>
+              </Grid>
+              <Grid item xs={12}>
+                <div class="inputGroup">
+                  <input id="radio2" name="radio" type="radio"/>
+                  <label for="radio2">Nej, tack!</label>
+                </div>
+              </Grid>
+            </div>
             <Grid item xs={12}>
               <input type="submit" className="btn" value="Skicka" />
             </Grid>
