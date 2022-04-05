@@ -5,7 +5,11 @@ import Footer from './Footer';
 import backgroundImage from '../resources/backgroundimage.jpg';
 
 const styles = makeStyles({
-    background: {
+    layout: {
+        height: '100%'
+    },
+    mainContentContainer: {
+        height: '100%',
         backgroundImage: `url(${backgroundImage})`,
         backgroundPosition: 'center', 
         backgroundSize: 'cover', 
@@ -15,7 +19,9 @@ const styles = makeStyles({
         minHeight: '75vh',
         flexDirection: "column",
         alignItems: "center",
-        padding: "3rem"
+        padding: "3rem",
+        marginTop: "1rem",
+        marginBottom: "1rem"
     }
 });
 
@@ -23,12 +29,12 @@ function Layout({ children }) {
     const classes = styles();
 
     return (
-        <div>
+        <div className={classes.layout}>
             {/* Navigation */}
             <NavBar />
 
             {/* Main content */}
-            <Grid container className={classes.background}>
+            <Grid className={classes.mainContentContainer} container>
                 <Grid item xs={1} />
                 <Grid item xs={10}>
                     <Paper className={classes.mainContent}>
@@ -38,6 +44,7 @@ function Layout({ children }) {
                 <Grid item xs={1}  />
             </Grid>
             
+            {/* Footer */}
             <Footer />
         </div>
     )

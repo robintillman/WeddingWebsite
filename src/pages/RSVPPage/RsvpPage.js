@@ -120,7 +120,13 @@ function RsvpPage() {
             </Grid>
             <div className="hrContainer">
               <Grid item xs={12}>
-                <span className="details">Är du intresserad av hotellrum inkl. frukost till förmånligt pris?</span>
+                <span className="details">
+                  Det finns möjlighet att bo kvar på det 4-stjärninga hotellet (inkl. frukost) till ett förmånligt pris.
+                  <br/><br/>
+                  Isabella & Robin kommer att återkomma till alla intresserade med förslag på rum och pris.
+                  <br/><br/>
+                  Är du intresserad?
+                </span>
               </Grid>
               <Grid item xs={12}>
                 <div className="inputGroup">
