@@ -9,6 +9,7 @@ import MarriagePage from './pages/MarriagePage';
 import DinnerPartyPage from './pages/DinnerPartyPage';
 import WishlistPage from './pages/WishlistPage';
 import RsvpPage from './pages/RSVPPage/RsvpPage';
+import RsvpSubmitPage from './pages/RSVPPage/RsvpSubmitPage';
 import PageNotFound from './pages/PageNotFound';
 
 const theme = createTheme({
@@ -48,6 +49,7 @@ function App() {
                         <Route exact path="/middagochfest" element={<DinnerPartyPage />} />
                         <Route exact path="/onskelista" element={<WishlistPage />} />
                         <Route exact path="/osa" element={<RsvpPage />} />
+                        <Route exact path="/osa/tack" element={<RsvpSubmitPage />} />
                         <Route path="*" element={<PageNotFound />} />
                     </Routes>
                 </Layout>

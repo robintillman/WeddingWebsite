@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import emailjs from 'emailjs-com';
 import { makeStyles, Typography, Grid, Divider } from '@material-ui/core';
 import './RsvpPage.css';
@@ -14,22 +15,55 @@ const styles = makeStyles({
       marginBottom: '15px',
       marginTop: '10px'
     }
-});
+});  
 
 function RsvpPage() {
   const classes = styles();
+  const navigate = useNavigate();
+  const [guestName, setGuestName] = useState('');
+  const [guestEmail, setGuestEmail] = useState('');
 
   function sendEmail(e) {
-      e.preventDefault();
+    e.preventDefault();
+    
+    var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
 
-      emailjs.sendForm("service_z38l2zw", "template_w1958lb", e.target, "DP2X8Kpvf3NRfG83Y")
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
+    //Validation
+    if(!guestName) {
+      console.log('Namn måste anges!'); 
+      return;
+    }
 
-      e.target.reset();
+    if(guestName === "") {
+      console.log('Namn måste anges!'); 
+      return;
+    }
+
+    if(!guestEmail) {
+      console.log('E-post måste anges!'); 
+      return;
+    }
+
+    if(guestEmail === "") {
+      console.log('E-post måste anges!'); 
+      return;
+    }
+
+    if (!pattern.test(guestEmail)) {
+      console.log('Var god ange en korrekt e-postadress!'); 
+      return;
+    }
+
+    //Send email
+    emailjs.sendForm("service_myj5piw", "template_w1958lb", e.target, "DP2X8Kpvf3NRfG83Y")
+        .then((result) => {
+            console.log('Success...', result.text);
+            navigate('/osa/tack');
+        }, (error) => {
+            console.log('Error...', error.text);
+        });
+
+    e.target.reset();
   }
 
   return (
@@ -43,51 +77,81 @@ function RsvpPage() {
         <Divider className={classes.divider}/>
       </Grid>
       <Grid className="body" item xs={12}>
-        <form onSubmit={sendEmail} className={classes.container}>
+        <form
+          className={classes.container}
+          onSubmit={sendEmail}
+        >
           <div className="contact-box">
             <Grid item xs={12}>
               <span className="details">Namn</span>
             </Grid>
             <Grid item xs={12}>
-              <input type="text" className="field" placeholder="Namn på samtliga gäster" name="name" required />
+              <input 
+                type="text"
+                className="field"
+                placeholder="T.ex: Anna Karlsson, Kalle Jansson och Claes Månsson"
+                name="guestName"
+                onChange={event => setGuestName(event.target.value)}
+                required 
+              />
             </Grid>
             <Grid item xs={12}>
-              <span className="details">E-postadress</span>
+              <span className="details">E-post</span>
             </Grid>
             <Grid item xs={12}>
-              <input type="text" className="field" placeholder="E-post" name="email" required />
-            </Grid>
-            <Grid item xs={12}>
-              <span className="details">Telefonnummer</span>
-            </Grid>
-            <Grid item xs={12}>
-              <input type="text" className="field" placeholder="Telefonnummer" name="phonenumber" required />
+              <input 
+                type="email"
+                className="field"
+                placeholder=""
+                name="guestEmail"
+                onChange={event => setGuestEmail(event.target.value)}
+                required 
+              />
             </Grid>
             <Grid item xs={12}>
               <span className="details">Övrigt meddelande</span>
             </Grid>
             <Grid item xs={12}>
-              <textarea placeholder="Allergier, specialkost, etc." className="field" name="message" />
+              <textarea
+                className="field"
+                placeholder="Allergier, specialkost, matpreferenser, etc."
+                name="message"
+              />
             </Grid>
             <div className="hrContainer">
               <Grid item xs={12}>
-                <span className="details">Är du intresserad av hotellrum till förmånligt pris?</span>
+                <span className="details">Är du intresserad av hotellrum inkl. frukost till förmånligt pris?</span>
               </Grid>
               <Grid item xs={12}>
-                <div class="inputGroup">
-                  <input id="radio1" name="radio" type="radio" checked />
-                  <label for="radio1">Jag är intresserad!</label>
+                <div className="inputGroup">
+                  <input
+                    type="radio"
+                    id="radio1"
+                    name="doWantHotelRoom"
+                    value="Jag är intresserad!"
+                    defaultChecked 
+                  />
+                  <label htmlFor="radio1">Jag är intresserad!</label>
                 </div>
               </Grid>
               <Grid item xs={12}>
-                <div class="inputGroup">
-                  <input id="radio2" name="radio" type="radio"/>
-                  <label for="radio2">Nej, tack!</label>
+                <div className="inputGroup">
+                  <input 
+                    type="radio"
+                    id="radio2"
+                    name="doWantHotelRoom"
+                    value="Nej, tack!"
+                    />
+                  <label htmlFor="radio2">Nej, tack!</label>
                 </div>
               </Grid>
             </div>
             <Grid item xs={12}>
-              <input type="submit" className="btn" value="Skicka" />
+              <input
+                type="submit"
+                className="btn"
+                value="Skicka"
+              />
             </Grid>
           </div>
         </form>

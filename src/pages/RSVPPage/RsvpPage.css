@@ -24,7 +24,7 @@
 }
 
 .field{
-    width: 40vh;
+	width: 100%;
 	border: 2px solid rgba(0, 0, 0, 0);
 	outline: none;
 	background-color: rgba(230, 230, 230, 0.6);
@@ -54,6 +54,7 @@
 }
 
 textarea{
+	resize: vertical;
 	min-height: 150px;
 }
 
@@ -71,7 +72,7 @@ textarea{
 }
 
 .btn:hover{
-    background-color: #a58327;
+    background-color: #eb550b;
 }
 
 .field:focus{
