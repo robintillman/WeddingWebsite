@@ -8,8 +8,8 @@ import HomePage from './pages/HomePage';
 import MarriagePage from './pages/MarriagePage';
 import DinnerPartyPage from './pages/DinnerPartyPage';
 import WishlistPage from './pages/WishlistPage';
-import RsvpPage from './pages/RSVPPage/RsvpPage';
-import RsvpSubmitPage from './pages/RSVPPage/RsvpSubmitPage';
+import RsvpPage from './pages/rsvp/RsvpPage';
+import RsvpSubmitPage from './pages/rsvp/RsvpSubmitPage';
 import PageNotFound from './pages/PageNotFound';
 
 const theme = createTheme({
@@ -23,7 +23,7 @@ const theme = createTheme({
     },
     typography: {
       fontFamily: [
-        'Roboto'
+        '"Helvetica Neue"'
       ],
       h4: {
         fontWeight: 600,
@@ -39,22 +39,22 @@ const theme = createTheme({
 
 function App() {
     return (
-        <ThemeProvider theme={theme}>
-            <BrowserRouter>
-                <Layout>
-                    <Routes>
-                        <Route exact path="/" element={<HomePage />} />
-                        <Route exact path="/valkommen" element={<HomePage />} />
-                        <Route exact path="/vigsel" element={<MarriagePage />} />
-                        <Route exact path="/middagochfest" element={<DinnerPartyPage />} />
-                        <Route exact path="/onskelista" element={<WishlistPage />} />
-                        <Route exact path="/osa" element={<RsvpPage />} />
-                        <Route exact path="/osa/tack" element={<RsvpSubmitPage />} />
-                        <Route path="*" element={<PageNotFound />} />
-                    </Routes>
-                </Layout>
-            </BrowserRouter>
-        </ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <BrowserRouter>
+          <Layout>
+            <Routes>
+              <Route exact path="/" element={<HomePage />} />
+              <Route exact path="/valkommen" element={<HomePage />} />
+              <Route exact path="/vigsel" element={<MarriagePage />} />
+              <Route exact path="/middagochfest" element={<DinnerPartyPage />} />
+              <Route exact path="/onskelista" element={<WishlistPage />} />
+              <Route exact path="/osa" element={<RsvpPage />} />
+              <Route exact path="/osa/tack" element={<RsvpSubmitPage />} />
+              <Route path="*" element={<PageNotFound />} />
+            </Routes>
+          </Layout>
+        </BrowserRouter>
+      </ThemeProvider>
     )
 }
 

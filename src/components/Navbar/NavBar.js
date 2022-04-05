@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Grid } from '@material-ui/core';
 import './NavBar.css';
 
 function NavBar() {

@@ -69,12 +69,12 @@ function RsvpPage() {
   return (
     <Grid item spacing={0} container>
       <Grid item xs={12}>
-        <Typography variant="h3" className={classes.container}>
+        <Typography variant="h3" color="secondary" className={classes.container}>
             O.S.A.
         </Typography>
-      </Grid>
-      <Grid item xs={12}>
-        <Divider className={classes.divider}/>
+        <Grid item xs={12}>
+          <Divider className={classes.divider}/>
+        </Grid>
       </Grid>
       <Grid className="body" item xs={12}>
         <form

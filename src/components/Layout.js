@@ -2,7 +2,7 @@ import React from 'react'
 import { makeStyles, Grid, Paper } from '@material-ui/core';
 import NavBar from './Navbar/NavBar';
 import Footer from './Footer';
-import backgroundImage from '../resources/backgroundimage.jpg';
+import backgroundImage from '../resources/images/backgroundimage.jpg';
 
 const styles = makeStyles({
     layout: {

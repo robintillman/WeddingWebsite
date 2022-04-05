@@ -19,12 +19,12 @@ function WishlistPage() {
     return (
         <Grid item spacing={0} container>
             <Grid item xs={12}>
-                <Typography variant="h3" className={classes.container}>
+                <Typography color="secondary" variant="h3" className={classes.container}>
                     Önskelista
                 </Typography>
-            </Grid>
-            <Grid item xs={12}>
-              <Divider className={classes.divider}/>
+                <Grid item xs={12}>
+                    <Divider className={classes.divider}/>
+                </Grid>
             </Grid>
         </Grid>
     )
