@@ -43,7 +43,7 @@
     .Navbar > .nav-items {
       z-index: 500;
       position: absolute;
-      top: 60px;
+      top: 5vh;
       display: flex;
       flex-direction: column;
       background: #f9f9f9;

@@ -10,7 +10,17 @@ const styles = makeStyles({
         backgroundImage: `url(${backgroundImage})`,
         backgroundPosition: 'center', 
         backgroundSize: 'cover', 
-        backgroundRepeat: 'no-repeat'
+        backgroundRepeat: 'no-repeat',
+        paddingLeft: '100px',
+        paddingRight: '100px',
+        "@media (max-width: 1200px)": {
+            paddingLeft: '50px',
+            paddingRight: '50px',
+        },
+        "@media (max-width: 700px)": {
+            paddingLeft: '10px',
+            paddingRight: '10px',
+        }
       },
     mainContent: {
         minHeight: '74vh',
@@ -30,13 +40,11 @@ function Layout({ children }) {
 
             {/* Main content */}
             <Grid container className={classes.mainContentContainer}>
-                <Grid item xs={1} />
-                <Grid item xs={10}>
+                <Grid item xs={12}>
                     <Paper className={classes.mainContent}>
                         { children }
                     </Paper>
                 </Grid>
-                <Grid item xs={1}  />
             </Grid>
             
             {/* Footer */}

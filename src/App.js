@@ -69,7 +69,7 @@ const theme = createTheme({
       //navbar
       caption: {
         fontFamily: 'Raleway',
-        fontSize: '24px', //Standard 12px
+        fontSize: '18px', //Standard 12px
       },
       //O.S.A - Formulärtext
       subtitle1: {
