@@ -99,8 +99,8 @@ function RsvpPage() {
         <Divider className={classes.divider}/>
       </Grid>
 
-      <Grid item md={1} />
-      <Grid item xs={12} md={10} className={classes.formContainer} container>
+      <Grid item md={1} xl={3} />
+      <Grid item xs={12} md={10} xl={6} className={classes.formContainer} container>
         <form
           className={classes.container}
           onSubmit={sendEmail}
@@ -219,7 +219,7 @@ function RsvpPage() {
           </div>
         </form>
       </Grid>
-      <Grid item md={1} />
+      <Grid item md={1} xl={3} />
 
       {/*Divider*/}
       <Grid item xs={12}>
