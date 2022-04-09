@@ -92,9 +92,9 @@ function MarriagePage() {
               alt="Map pin"
             />
             <Typography variant="caption" color="secondary" className={classes.address}>
-              <b>Norrtälje kyrka<br/>
+              Norrtälje kyrka<br/>
               Kyrkogatan 4,<br/>
-              761 30 Norrtälje</b>
+              761 30 Norrtälje
             </Typography>
           </Grid>
           <Grid item xs={12} lg={9} className={classes.mapContainer}>

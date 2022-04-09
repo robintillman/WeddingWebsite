@@ -6,6 +6,8 @@ import emailImage from '../resources/images/email_white.svg';
 
 const styles = makeStyles({
     container: {
+        bottom: 0,
+        width: '100%',
         color: 'white',
         backgroundColor: '#ba5625',
         paddingTop: '2rem',

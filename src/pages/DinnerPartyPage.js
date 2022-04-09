@@ -91,9 +91,9 @@ function DinnerPartyPage() {
               alt="Map pin"
             />
             <Typography variant="caption" color="secondary" className={classes.address}>
-              <b>Furusund Värdshus<br/>
+              Furusund Värdshus<br/>
               Furusunds Strandväg 2,<br/>
-              760 19 Furusund</b>
+              760 19 Furusund
             </Typography>
           </Grid>
           <Grid item xs={12} lg={9} className={classes.mapContainer}>
