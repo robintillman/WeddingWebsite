@@ -37,8 +37,17 @@ const theme = createTheme({
       ].join(','),
       //Välkommen-titel
       h1: {
-        fontSize: '108px',  //Standard 96px
+        fontSize: '122px',  //Standard 96px
         fontFamily: 'Parisienne',
+        "@media (max-width: 1200px)": {
+            fontSize: '72px'
+        },
+        "@media (max-width: 700px)": {
+            fontSize: '52px'
+        },
+        "@media (max-width: 369px)": {
+            fontSize: '42px'
+        }
       },
       //Alla titlar utom välkommen
       h2: {

@@ -11,7 +11,7 @@ const styles = makeStyles({
         justifyContent: 'center',
         alignItems: 'center',
         paddingTop: '1rem',
-        paddingBottom: '2rem',
+        paddingBottom: '2rem'
     },
     container: {
         display: 'flex',
@@ -19,6 +19,11 @@ const styles = makeStyles({
         alignItems: 'center',
         marginTop: '5rem',
         marginBottom: '5rem'
+    },
+    textContainer: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     xsTextContainer: {
         display: 'flex',
@@ -49,24 +54,9 @@ function HomePage() {
         <Grid item spacer={0} container>
             {/*Title*/}
             <Grid item xs={12} className={classes.titleContainer} container>
-                <Grid item xs={12} className={classes.mdTextContainer}>
+                <Grid item xs={12} className={classes.textContainer}>
                     <Typography variant="h1" color="secondary">
                         Vi gifter oss
-                    </Typography>
-                </Grid>
-                <Grid item xs={12} md={4}>
-                    <Typography variant="h1" color="secondary" className={classes.xsTextContainer}>
-                        Vi
-                    </Typography>
-                </Grid>
-                <Grid item xs={12} md={4} className={classes.textContainer}>
-                    <Typography variant="h1" color="secondary" className={classes.xsTextContainer}>
-                        gifter
-                    </Typography>
-                </Grid>
-                <Grid item xs={12} md={4}>
-                    <Typography variant="h1" color="secondary" className={classes.xsTextContainer}>
-                        oss
                     </Typography>
                 </Grid>
             </Grid>
