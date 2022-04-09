@@ -56,8 +56,7 @@ function CountDownClock() {
 
     return (
         <Grid item xs={12} spacing={2} className={classes.container} container>
-            <Grid item md={2} />
-            <Grid item xs={12} md={2}>
+            <Grid item xs={6} md={3}>
                 <Grid item xs={12}>
                     <Typography variant="h4" className={classes.unit}>
                         {timerDays}
@@ -69,7 +68,7 @@ function CountDownClock() {
                     </Typography>
                 </Grid>
             </Grid>
-            <Grid item xs={12} md={2}>
+            <Grid item xs={6} md={3}>
                 <Grid item xs={12}>
                     <Typography variant="h4" className={classes.unit}>
                         {timerHours}
@@ -81,7 +80,7 @@ function CountDownClock() {
                     </Typography>
                 </Grid>
             </Grid>
-            <Grid item xs={12} md={2}>
+            <Grid item xs={6} md={3}>
                 <Grid item xs={12}>
                     <Typography variant="h4" className={classes.unit}>
                         {timerMinutes}
@@ -93,7 +92,7 @@ function CountDownClock() {
                     </Typography>
                 </Grid>
             </Grid>
-            <Grid item xs={12} md={2}>
+            <Grid item xs={6} md={3}>
                 <Grid item xs={12}>
                     <Typography variant="h4" className={classes.unit}>
                         {timerSeconds}
@@ -105,7 +104,6 @@ function CountDownClock() {
                     </Typography>
                 </Grid>
             </Grid>
-            <Grid item md={2} />
         </Grid>
     )
 }
