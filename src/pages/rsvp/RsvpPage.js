@@ -67,10 +67,8 @@ const styles = makeStyles({
 function RsvpPage() {
   const classes = styles();
   const navigate = useNavigate();
-  const [guestName, setGuestName] = useState('');
   const [guestEmail, setGuestEmail] = useState('');
   const pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
-
 
   function sendEmail(e) {
     e.preventDefault();
@@ -138,7 +136,6 @@ function RsvpPage() {
                   className={classes.textField}
                   placeholder="T.ex: Anna Karlsson, Kalle Jansson och Claes Månsson"
                   name="guestName"
-                  onChange={event => setGuestName(event.target.value)}
                 />
               </Typography>
             </Grid>
