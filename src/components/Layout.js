@@ -16,7 +16,6 @@ const styles = makeStyles({
         backgroundRepeat: 'no-repeat'
       },
     mainContent: {
-        minHeight: '75vh',
         flexDirection: "column",
         alignItems: "center",
         padding: "3rem",

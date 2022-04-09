@@ -8,8 +8,11 @@ const styles = makeStyles({
         alignItems: 'center'
     },
     divider: {
-      marginBottom: '15px',
+      marginBottom: '5vh',
       marginTop: '10px'
+    },
+    spacer: {
+        height: '5vh'
     }
 });
 
@@ -19,18 +22,30 @@ function RsvpSubmitPage() {
     return (
         <Grid item spacing={0} container>
             <Grid item xs={12}>
-                <Typography variant="h3" className={classes.container}>
+                <Typography variant="h3" color="secondary" className={classes.container}>
                     Vi har tagit emot ditt svar!
                 </Typography>
             </Grid>
+
             <Grid item xs={12}>
               <Divider className={classes.divider}/>
             </Grid>
+
             <Grid item xs={12}>
-                <Typography variant="h5" className={classes.container}>
-                    Vi ses i september, en kopia av svaret har skickats till din mail!
+                <Typography variant="h5" color="primary" className={classes.container}>
+                    Vi ses i september, en kopia av ditt svar har skickats till din mail!
                 </Typography>
             </Grid>
+
+            <Grid item xs={12} className={classes.spacer} />
+
+            <Grid item xs={12}>
+                <Typography variant="h5" color="primary" className={classes.container}>
+                    Glöm inte att anmäla i förväg till toastmaster & toastmadame om du vill hålla tal!
+                </Typography>
+            </Grid>
+
+            <Grid item xs={12} className={classes.spacer} />
         </Grid>
     )
 }

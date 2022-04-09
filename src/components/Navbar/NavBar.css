@@ -8,7 +8,6 @@
   
   .Navbar > .nav-items > a {
     color: black;
-    font-size: 16px;
     text-decoration: none;
     margin: 15px;
     opacity: 0.9;
@@ -16,7 +15,7 @@
   
   .Navbar > .nav-items > a:hover {
     opacity: 1;
-    color: #ba5625;
+    color: #9c7c38;
   }
   
   .Navbar > .nav-items > a::before {

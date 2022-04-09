@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Typography } from '@material-ui/core';
 import './NavBar.css';
 
 function NavBar() {
@@ -7,11 +8,21 @@ function NavBar() {
     return (
         <div className='Navbar'>
             <div className={`nav-items ${isOpen && "open"}`}>
-                <a href="/">Välkommen</a> 
-                <a href="/vigsel">Vigsel</a>
-                <a href="/middagochfest">Middag & fest</a>
-                <a href="/onskelista">Önskelista</a>
-                <a href="/osa">O.S.A.</a>
+                <a href="/">
+                    <Typography variant="caption">Välkommen</Typography>
+                </a> 
+                <a href="/vigsel">
+                    <Typography variant="caption">Vigsel</Typography>
+                </a>
+                <a href="/middagochfest">
+                    <Typography variant="caption">Middag & fest</Typography>
+                </a>
+                <a href="/onskelista">
+                    <Typography variant="caption">Önskelista</Typography>
+                </a>
+                <a href="/osa">
+                    <Typography variant="caption">O.S.A.</Typography>
+                </a>
             </div>
             <div
                 className={`nav-toggle ${isOpen && "open"}`}

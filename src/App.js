@@ -2,7 +2,6 @@ import React from 'react';
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import './App.css';
-
 import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import MarriagePage from './pages/MarriagePage';
@@ -18,22 +17,70 @@ const theme = createTheme({
         main:"#000000",
       },
       secondary: {
-        main:"#bfbfbf",
-      },
+        main:"#9c7c38",
+        opacity: ""
+      }
     },
     typography: {
       fontFamily: [
-        '"Helvetica Neue"'
-      ],
+        '-apple-system',
+        'BlinkMacSystemFont',
+        '"Segoe UI"',
+        'Roboto',
+        '"Helvetica Neue"',
+        'Arial',
+        'sans-serif',
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+        'Berkshire Swash'
+      ].join(','),
+      //Välkommen-titel
+      h1: {
+        fontSize: '108px',  //Standard 96px
+        fontFamily: 'Parisienne',
+      },
+      //Alla titlar utom välkommen
+      h2: {
+        fontFamily: 'Berkshire Swash',
+      },
+      //Startsida - underrubriker
+      h3: {
+        fontFamily: 'Berkshire Swash',
+      },
+      //Nedräknaren
       h4: {
-        fontWeight: 600,
-        fontSize: 28,
-        lineHeight: '2rem',
+        fontFamily: 'Raleway',
       },
-      h5: {
-        fontWeight: 100,
-        lineHeight: '2rem',
+      //Nedräknaren
+      h6: {
+        fontFamily: 'Raleway',
       },
+      //brödtext
+      body1: {
+        fontFamily: 'Raleway',
+        fontSize: '16px' //Standard 16px
+      },
+      //specialtext
+      body2: {
+        fontFamily: 'Raleway',
+        fontSize: '14px' //Standard 14px
+      },
+      //navbar
+      caption: {
+        fontFamily: 'Raleway',
+        fontSize: '18px' //Standard 12px
+      },
+      //O.S.A - Formulärtext
+      subtitle1: {
+        fontFamily: 'Raleway',
+        fontSize: '16px' //Standard 16px
+      },
+      //Footer-text
+      subtitle2: {
+        fontFamily: 'Raleway',
+        fontSize: '16px' //Standard 16px
+      }
     }
 });
 
