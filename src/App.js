@@ -50,11 +50,11 @@ const theme = createTheme({
       },
       //Nedräknaren
       h4: {
-        fontFamily: 'Raleway',
+        fontFamily: 'Berkshire Swash',
       },
       //Nedräknaren
       h6: {
-        fontFamily: 'Raleway',
+        fontFamily: 'Berkshire Swash',
       },
       //brödtext
       body1: {

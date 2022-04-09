@@ -78,27 +78,6 @@ function HomePage() {
             <Grid item xs={12} className={classes.container} container>
                 <Grid item xs={12} className={classes.mdTextContainer}>
                     <Typography variant="h3" color="primary">
-                        17 september 2022
-                    </Typography>
-                </Grid>
-                <Grid item xs={12} md={4}>
-                    <Typography variant="h3" color="primary" className={classes.xsTextContainer}>
-                        17
-                    </Typography>
-                </Grid>
-                <Grid item xs={12} md={4} className={classes.textContainer}>
-                    <Typography variant="h3" color="primary" className={classes.xsTextContainer}>
-                        september
-                    </Typography>
-                </Grid>
-                <Grid item xs={12} md={4}>
-                    <Typography variant="h3" color="primary" className={classes.xsTextContainer}>
-                        2022
-                    </Typography>
-                </Grid>
-                <Grid item xs={12} className={classes.spacer} />
-                <Grid item xs={12} className={classes.mdTextContainer}>
-                    <Typography variant="h3" color="primary">
                         Isabella
                     </Typography>
                     <img 
@@ -125,6 +104,27 @@ function HomePage() {
                 <Grid item xs={12} md={4}>
                     <Typography variant="h3" color="primary" className={classes.xsTextContainer}>
                         Robin
+                    </Typography>
+                </Grid>
+                <Grid item xs={12} className={classes.spacer} />
+                <Grid item xs={12} className={classes.mdTextContainer}>
+                    <Typography variant="h4" color="primary">
+                        17 september 2022
+                    </Typography>
+                </Grid>
+                <Grid item xs={12} md={4}>
+                    <Typography variant="h4" color="primary" className={classes.xsTextContainer}>
+                        17
+                    </Typography>
+                </Grid>
+                <Grid item xs={12} md={4} className={classes.textContainer}>
+                    <Typography variant="h4" color="primary" className={classes.xsTextContainer}>
+                        september
+                    </Typography>
+                </Grid>
+                <Grid item xs={12} md={4}>
+                    <Typography variant="h4" color="primary" className={classes.xsTextContainer}>
+                        2022
                     </Typography>
                 </Grid>
             </Grid>

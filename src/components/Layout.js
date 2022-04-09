@@ -6,12 +6,14 @@ import backgroundImage from '../resources/images/backgroundimage.jpg';
 
 const styles = makeStyles({
     mainContentContainer: {
+        minHeight: "100%",
         backgroundImage: `url(${backgroundImage})`,
         backgroundPosition: 'center', 
         backgroundSize: 'cover', 
         backgroundRepeat: 'no-repeat'
       },
     mainContent: {
+        minHeight: '74vh',
         padding: "3rem",
         marginTop: "1rem",
         marginBottom: "1rem"

@@ -82,7 +82,7 @@ function MarriagePage() {
             <Divider className={classes.divider}/>
           </Grid>
           <Grid
-            item xs={12} md={3}
+            item xs={12} lg={3}
             className={classes.addressContainer}
             onClick={()=> window.open("https://www.google.com/maps/dir/Norrt%C3%A4lje+kyrka,+Kyrkogatan,+Norrt%C3%A4lje//@59.7594774,18.635726,12z/data=!3m1!4b1!4m9!4m8!1m5!1m1!1s0x465ff64ccb53ae73:0x9cc58a1d76853197!2m2!1d18.705821!2d59.7594125!1m0!3e0", "_blank")}
           >
@@ -91,13 +91,13 @@ function MarriagePage() {
               className={classes.mapPin}
               alt="Map pin"
             />
-            <Typography variant="body2" color="secondary" className={classes.address}>
+            <Typography variant="caption" color="secondary" className={classes.address}>
               <b>Norrtälje kyrka<br/>
               Kyrkogatan 4,<br/>
               761 30 Norrtälje</b>
             </Typography>
           </Grid>
-          <Grid item xs={12} md={9} className={classes.mapContainer}>
+          <Grid item xs={12} lg={9} className={classes.mapContainer}>
             <Map lat={59.75945} lng={18.70582} />
           </Grid>
           <Grid item xs={12}>

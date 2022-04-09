@@ -81,7 +81,7 @@ function DinnerPartyPage() {
             <Divider className={classes.divider}/>
           </Grid>
           <Grid
-            item xs={12} md={3}
+            item xs={12} lg={3}
             className={classes.addressContainer}
             onClick={()=> window.open("https://www.google.com/maps/dir/Norrt%C3%A4lje+kyrka,+Kyrkogatan,+Norrt%C3%A4lje/Furusund+v%C3%A4rdshus,+Furusunds+strandv%C3%A4g,+Furusund/@59.7095033,18.6491784,11z/data=!4m15!4m14!1m5!1m1!1s0x465ff64ccb53ae73:0x9cc58a1d76853197!2m2!1d18.705821!2d59.7594125!1m5!1m1!1s0x46f55c67d3175f01:0xeea7ca4380e5588b!2m2!1d18.9161299!2d59.659061!3e0!5i1", "_blank")}
           >
@@ -90,13 +90,13 @@ function DinnerPartyPage() {
               className={classes.mapPin}
               alt="Map pin"
             />
-            <Typography variant="body2" color="secondary" className={classes.address}>
+            <Typography variant="caption" color="secondary" className={classes.address}>
               <b>Furusund Värdshus<br/>
               Furusunds Strandväg 2,<br/>
               760 19 Furusund</b>
             </Typography>
           </Grid>
-          <Grid item xs={12} md={9} className={classes.mapContainer}>
+          <Grid item xs={12} lg={9} className={classes.mapContainer}>
             <Map lat={59.65916} lng={18.91605} />
           </Grid>
           <Grid item xs={12}>
