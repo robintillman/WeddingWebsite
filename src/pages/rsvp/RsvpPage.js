@@ -28,15 +28,15 @@ const styles = makeStyles({
     paddingRight: '1rem',
     marginBottom: '2rem'
   },
-  divider: {
-    marginBottom: '15px',
-    marginTop: '10px'
-  },
   infoBox: {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: '1rem'
+  },
+  divider: {
+    marginBottom: '15px',
+    marginTop: '10px'
   },
   textField: {
     marginTop: "1rem"
@@ -96,7 +96,7 @@ function RsvpPage() {
 
       {/*Divider*/}
       <Grid item xs={12}>
-        <Divider className={classes.divider}/>
+        <Divider style={{ background: 'black' }} variant="middle" className={classes.divider}/>
       </Grid>
 
       <Grid item md={1} xl={3} />
@@ -223,7 +223,7 @@ function RsvpPage() {
 
       {/*Divider*/}
       <Grid item xs={12}>
-        <Divider className={classes.divider}/>
+        <Divider style={{ background: 'black' }} variant="middle" className={classes.divider}/>
       </Grid>
     </Grid>
   )

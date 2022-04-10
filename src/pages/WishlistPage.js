@@ -8,9 +8,7 @@ const styles = makeStyles({
         alignItems: 'center'
     },
     wishContainer: {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center'
+        textAlign: 'center'
     },
     divider: {
       marginBottom: '15px',
@@ -20,7 +18,6 @@ const styles = makeStyles({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        textAlign: 'center'
     }
 });
 
@@ -29,35 +26,39 @@ function WishlistPage() {
     
     return (
         <Grid item spacing={2} container>
+
+            {/*Title*/}
             <Grid item xs={12}>
                 <Typography variant="h2" color="secondary" className={classes.container}>
                     Önskelista
                 </Typography>
             </Grid>
+
+            {/*Divider*/}
             <Grid item xs={12}>
-                <Divider className={classes.divider}/>
+                <Divider style={{ background: 'black' }} variant="middle" className={classes.divider}/>
             </Grid>
-            <Grid item xs={12} className={classes.wishContainer} container>
-                <Grid item xs={12} className={classes.text} container>
-                    <Grid item xs={12}>
-                        <Typography variant="h6" color="primary">
-                            Resebidrag
-                        </Typography>
-                    </Grid>
-                    <Grid item xs={12}>
-                        <Typography variant="body1" color="primary">
-                            Om ni vill ge något är det vi önskar oss mest av allt bidrag till vår bröllopsresa.
-                            Ni kan ge ett bidrag genom att..            
-                            <br/><br/>
-                            Sätta över på vårat gemensamma konto:<br/><i>8242-0, 3 958 081-6</i>               
-                            <br/><br/>
-                            Swisha till Isabella:<br/><i>0735 06 86 57</i>
-                        </Typography>
-                    </Grid>
-                </Grid>
+
+            {/*Text*/}
+            <Grid item xs={12}>
+                <Typography variant="h6" color="primary" className={classes.wishContainer}>
+                    Resebidrag
+                </Typography>
             </Grid>
             <Grid item xs={12}>
-                <Divider className={classes.divider}/>
+                <Typography variant="body1" color="primary" className={classes.wishContainer}>
+                    Om ni vill ge något är det vi önskar oss mest av allt bidrag till vår bröllopsresa.
+                    Ni kan ge ett bidrag genom att..            
+                    <br/><br/>
+                    Sätta över på vårat gemensamma konto:<br/><i>8242-0, 3 958 081-6</i>               
+                    <br/><br/>
+                    Swisha till Isabella:<br/><i>0735 06 86 57</i>
+                </Typography>
+            </Grid>
+
+            {/*Divider*/}
+            <Grid item xs={12}>
+                <Divider style={{ background: 'black' }} variant="middle" className={classes.divider}/>
             </Grid>
         </Grid>
     )

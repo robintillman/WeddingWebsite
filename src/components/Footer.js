@@ -41,7 +41,7 @@ function Footer() {
             {/*Divider*/}
             <Grid item xs={1} />
             <Grid item xs={10}>
-                <Divider className={classes.Divider} style={{ background: "#e6e6e6" }} />
+                <Divider className={classes.Divider} variant="middle" style={{ background: "white" }} />
             </Grid>
             <Grid item xs={1} />
 
@@ -51,7 +51,7 @@ function Footer() {
             {/*Divider*/}
             <Grid item xs={1} />
             <Grid item xs={10}>
-                <Divider className={classes.Divider} style={{ background: "#e6e6e6" }} />
+                <Divider className={classes.Divider} variant="middle" style={{ background: "white" }} />
             </Grid>
             <Grid item xs={1} />
 

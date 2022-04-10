@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles, Grid, Paper } from '@material-ui/core';
-import NavBar from './Navbar/NavBar';
+import Navbar from './Navbar';
 import Footer from './Footer';
 import backgroundImage from '../resources/images/backgroundimage.jpg';
 
@@ -36,7 +36,7 @@ function Layout({ children }) {
     return (
         <div>
             {/* Navigation */}
-            <NavBar />
+            <Navbar />
 
             {/* Main content */}
             <Grid container className={classes.mainContentContainer}>

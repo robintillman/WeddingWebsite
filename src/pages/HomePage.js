@@ -44,6 +44,13 @@ const styles = makeStyles({
     divider: {
       marginBottom: '15px',
       marginTop: '10px'
+    },
+    infoContainer: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        textAlign: 'center',
+        marginTop: '5px'
     }
 });
   
@@ -62,12 +69,12 @@ function HomePage() {
             </Grid>
             {/*Divider*/}
             <Grid item xs={12}>
-                <Divider className={classes.divider}/>
+                <Divider style={{ background: 'black' }} variant="middle" className={classes.divider}/>
             </Grid>
             {/*Main content*/}
             <Grid item xs={12} className={classes.container} container>
                 <Grid item xs={12} className={classes.mdTextContainer}>
-                    <Typography variant="h3" color="primary">
+                    <Typography variant="h2" color="primary">
                         Isabella
                     </Typography>
                     <img 
@@ -75,12 +82,12 @@ function HomePage() {
                         style={{ height: 55, width: 55 }}
                         alt="Gold heart"
                     />
-                    <Typography variant="h3" color="primary">
+                    <Typography variant="h2" color="primary">
                         Robin
                     </Typography>
                 </Grid>            
                 <Grid item xs={12} md={4} className={classes.xsTextContainer}>
-                    <Typography variant="h3" color="primary">
+                    <Typography variant="h2" color="primary">
                         Isabella
                     </Typography>
                 </Grid>
@@ -92,42 +99,93 @@ function HomePage() {
                     />
                 </Grid>
                 <Grid item xs={12} md={4}>
-                    <Typography variant="h3" color="primary" className={classes.xsTextContainer}>
+                    <Typography variant="h2" color="primary" className={classes.xsTextContainer}>
                         Robin
                     </Typography>
                 </Grid>
                 <Grid item xs={12} className={classes.spacer} />
                 <Grid item xs={12} className={classes.mdTextContainer}>
-                    <Typography variant="h4" color="primary">
+                    <Typography variant="h3" color="primary">
                         17 september 2022
                     </Typography>
                 </Grid>
                 <Grid item xs={12} md={4}>
-                    <Typography variant="h4" color="primary" className={classes.xsTextContainer}>
+                    <Typography variant="h3" color="primary" className={classes.xsTextContainer}>
                         17
                     </Typography>
                 </Grid>
                 <Grid item xs={12} md={4} className={classes.textContainer}>
-                    <Typography variant="h4" color="primary" className={classes.xsTextContainer}>
+                    <Typography variant="h3" color="primary" className={classes.xsTextContainer}>
                         september
                     </Typography>
                 </Grid>
                 <Grid item xs={12} md={4}>
-                    <Typography variant="h4" color="primary" className={classes.xsTextContainer}>
+                    <Typography variant="h3" color="primary" className={classes.xsTextContainer}>
                         2022
+                    </Typography>
+                </Grid>
+            </Grid>
+            
+            {/*Important info*/}
+            <Grid item xs={12} className={classes.infoContainer} container>
+                <Grid item xs={12}>
+                    <Typography variant="h6" color="primary">
+                        O.S.A.
+                    </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                    <Typography variant="body1" color="primary">
+                        Senast 17 juli 2022<br/>
+                        O.S.A. via denna hemsida eller kontakta Isabella & Robin direkt
+                    </Typography>
+                </Grid>
+            </Grid>
+            <Grid item xs={12} className={classes.infoContainer} container>
+                <Grid item xs={12}>
+                    <Typography variant="h6" color="primary">
+                        Klädsel - Mörk kostym
+                    </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                    <Typography variant="body1" color="primary">
+                        Mörk kostym respektive knälång klänning eller kjol. 
+                    </Typography>
+                </Grid>
+            </Grid>
+            <Grid item xs={12} className={classes.infoContainer} container>
+                <Grid item xs={12}>
+                    <Typography variant="h6" color="primary">
+                        Barn
+                    </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                    <Typography variant="body1" color="primary">
+                        Vi önskar att man ordnar barnvakt både för vigseln samt för festen & middagen
+                    </Typography>
+                </Grid>
+            </Grid>
+            <Grid item xs={12} className={classes.infoContainer} container>
+                <Grid item xs={12}>
+                    <Typography variant="h6" color="primary">
+                        Fotografering
+                    </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                    <Typography variant="body1" color="primary">
+                        En fotograf kommer att finnas på plats under vigseln och brudskålen.<br/>Kontakta oss om ni inte vill vara med på bild.
                     </Typography>
                 </Grid>
             </Grid>
 
             <Grid item xs={12} className={classes.container}>
-                <Typography variant="subtitle1" color="primary">
+                <Typography variant="body1" color="primary">
                     <i>Sidan uppdateras löpande, håll utkik för senaste info!</i>
                 </Typography>
             </Grid>
 
             {/*Divider*/}
             <Grid item xs={12}>
-                <Divider className={classes.divider}/>
+                <Divider style={{ background: 'black' }} variant="middle" className={classes.divider}/>
             </Grid>
         </Grid>
     )
