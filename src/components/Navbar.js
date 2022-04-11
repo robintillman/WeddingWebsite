@@ -19,7 +19,7 @@ const styles = makeStyles({
         padding: 0
     },
     nav: {
-        width: 'calc(100% - 1rem - 100px)',
+        width: 'calc(100% - 2rem - 130px)',
         minHeight: '50px',
         display: 'flex',
         justifyContent: 'center',
@@ -38,7 +38,9 @@ const styles = makeStyles({
         }
     },
     toggle: {
-        border: 'none'
+        border: 'none',
+        width: '30px',
+        border: '1px solid black'
     }
 });
 
