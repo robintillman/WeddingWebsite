@@ -23,7 +23,10 @@ const styles = makeStyles({
         minHeight: '50px',
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        "@media (max-width: 991px)": {
+          width: '100%',
+        }
     },
     link: {
         marginLeft: '2rem'
