@@ -20,12 +20,10 @@ const styles = makeStyles({
     },
     nav: {
         width: 'calc(100% - 1rem - 100px)',
-        height: '50px',
+        minHeight: '50px',
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center',
-        margin: 0,
-        padding: 0
+        alignItems: 'center'
     },
     link: {
         marginLeft: '2rem'
