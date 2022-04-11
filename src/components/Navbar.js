@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles, Typography } from '@material-ui/core';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import goldHeart from '../resources/images/goldheart.svg';
 
@@ -30,11 +30,18 @@ const styles = makeStyles({
     link: {
         marginLeft: '2rem'
     },
-    linkText: {
-        "&:hover": {
+    dropdownLink: {
+        marginLeft: '2rem'
+    },
+    dropdownLinkItem: {
+        maxWidth: '230px',
+        backgroundColor: 'white',
+        "&:active": {
             opacity: '1',
             color: '#9c7c38'
         }
+    },
+    linkText: {
     },
     toggle: {
         border: 'none',
@@ -42,15 +49,15 @@ const styles = makeStyles({
     }
 });
 
-function NavBar3() {
+function NavBar() {
     const classes = styles();
 
     return (
         <Navbar
             bg="light"
-            variant="light"
             expand="lg"
             sticky="top"
+            collapseOnSelect
             className={classes.navBar}
         >
             <Navbar.Brand className={classes.brand}>
@@ -72,21 +79,44 @@ function NavBar3() {
                             Välkommen
                         </Typography>
                     </Nav.Link>
+
                     <Nav.Link href="/vigsel" className={classes.link}>
                         <Typography variant="caption" color="primary" className={classes.linkText}>
                             Vigsel
                         </Typography>
                     </Nav.Link>
-                    <Nav.Link href="/middagochfest" className={classes.link}>
-                        <Typography variant="caption" color="primary" className={classes.linkText}>
-                            Middag & fest
-                        </Typography>
-                    </Nav.Link>
+
+                    <NavDropdown title={
+                            <Typography variant="caption" color="primary" className={classes.linkText}>
+                                Middag & fest
+                            </Typography>
+                        }
+                        id="basic-nav-dropdown"
+                        className={classes.dropdownLink}
+                    >
+                        <NavDropdown.Item href="/middagochfest/program" className={classes.dropdownLinkItem}>
+                            <Typography variant="caption" color="primary" className={classes.linkText}>
+                                Kvällen
+                            </Typography>
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="/middagochfest/toast" className={classes.dropdownLinkItem}>
+                            <Typography variant="caption" color="primary" className={classes.linkText}>
+                                Toastmadame & toastmaster
+                            </Typography>
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="/middagochfest/boende" className={classes.dropdownLinkItem}>
+                            <Typography variant="caption" color="primary" className={classes.linkText}>
+                                Boende
+                            </Typography>
+                        </NavDropdown.Item>
+                    </NavDropdown>
+
                     <Nav.Link href="/onskelista" className={classes.link}>
                         <Typography variant="caption" color="primary" className={classes.linkText}>
                             Önskelista
                         </Typography>
                     </Nav.Link>
+
                     <Nav.Link href="/osa" className={classes.link}>
                         <Typography variant="caption" color="primary" className={classes.linkText}>
                             O.S.A.
@@ -98,4 +128,4 @@ function NavBar3() {
     )
 }
 
-export default NavBar3
+export default NavBar

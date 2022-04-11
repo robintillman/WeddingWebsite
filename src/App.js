@@ -6,6 +6,8 @@ import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import MarriagePage from './pages/MarriagePage';
 import DinnerPartyPage from './pages/DinnerPartyPage';
+import ToastPage from './pages/ToastPage';
+import HotelPage from './pages/HotelPage';
 import WishlistPage from './pages/WishlistPage';
 import RsvpPage from './pages/rsvp/RsvpPage';
 import RsvpSubmitPage from './pages/rsvp/RsvpSubmitPage';
@@ -92,7 +94,9 @@ function App() {
               <Route exact path="/" element={<HomePage />} />
               <Route exact path="/valkommen" element={<HomePage />} />
               <Route exact path="/vigsel" element={<MarriagePage />} />
-              <Route exact path="/middagochfest" element={<DinnerPartyPage />} />
+              <Route exact path="/middagochfest/program" element={<DinnerPartyPage />} />
+              <Route exact path="/middagochfest/toast" element={<ToastPage />} />
+              <Route exact path="/middagochfest/boende" element={<HotelPage />} />
               <Route exact path="/onskelista" element={<WishlistPage />} />
               <Route exact path="/osa" element={<RsvpPage />} />
               <Route exact path="/osa/tack" element={<RsvpSubmitPage />} />
