@@ -29,7 +29,7 @@ function RsvpSubmitPage() {
 
             {/*Divider*/}
             <Grid item xs={12}>
-                <Divider style={{ background: 'black' }} variant="middle" className={classes.divider}/>
+                <Divider style={{ background: 'black' }} className={classes.divider}/>
             </Grid>
 
             <Grid item xs={12}>
@@ -50,7 +50,7 @@ function RsvpSubmitPage() {
 
             {/*Divider*/}
             <Grid item xs={12}>
-                <Divider style={{ background: 'black' }} variant="middle" className={classes.divider}/>
+                <Divider style={{ background: 'black' }} className={classes.divider}/>
             </Grid>
         </Grid>
     )

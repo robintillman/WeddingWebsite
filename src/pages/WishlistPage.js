@@ -41,7 +41,7 @@ function WishlistPage() {
 
             {/*Text*/}
             <Grid item xs={12}>
-                <Typography variant="h6" color="primary" className={classes.wishContainer}>
+                <Typography variant="h3" color="primary" className={classes.wishContainer}>
                     Resebidrag
                 </Typography>
             </Grid>
@@ -50,15 +50,15 @@ function WishlistPage() {
                     Om ni vill ge något är det vi önskar oss mest av allt bidrag till vår bröllopsresa.
                     Ni kan ge ett bidrag genom att..            
                     <br/><br/>
-                    Sätta över på vårat gemensamma konto:<br/><i>8242-0, 3 958 081-6</i>               
+                    Banköverföring till vårat gemensamma konto:<br/>8242-0, 3 958 081-6            
                     <br/><br/>
-                    Swisha till Isabella:<br/><i>0735 06 86 57</i>
+                    Swisha till Isabella:<br/>0735 06 86 57
                 </Typography>
             </Grid>
 
             {/*Divider*/}
             <Grid item xs={12}>
-                <Divider style={{ background: 'black' }} variant="middle" className={classes.divider}/>
+                <Divider style={{ background: 'black' }} className={classes.divider}/>
             </Grid>
         </Grid>
     )

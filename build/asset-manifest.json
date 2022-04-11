@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8c9de69d.css",
-    "main.js": "/static/js/main.e3839c9d.js",
+    "main.css": "/static/css/main.8b508f85.css",
+    "main.js": "/static/js/main.e1186526.js",
     "static/js/787.1c863b1e.chunk.js": "/static/js/787.1c863b1e.chunk.js",
     "static/media/backgroundimage.jpg": "/static/media/backgroundimage.fec9e3daf26fc1f78650.jpg",
     "static/media/NorrtaljeKyrka.jpg": "/static/media/NorrtaljeKyrka.d9800eda5dba094d2df5.jpg",
@@ -12,12 +12,12 @@
     "static/media/map-pin.svg": "/static/media/map-pin.0c76399556dd175f16b54abbc1c40623.svg",
     "static/media/phone_white.svg": "/static/media/phone_white.fbf5449d2e6df8de233c34a2d01bda47.svg",
     "static/media/email_white.svg": "/static/media/email_white.1136a977c37a9407321e688cda9fba95.svg",
-    "main.8c9de69d.css.map": "/static/css/main.8c9de69d.css.map",
-    "main.e3839c9d.js.map": "/static/js/main.e3839c9d.js.map",
+    "main.8b508f85.css.map": "/static/css/main.8b508f85.css.map",
+    "main.e1186526.js.map": "/static/js/main.e1186526.js.map",
     "787.1c863b1e.chunk.js.map": "/static/js/787.1c863b1e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c9de69d.css",
-    "static/js/main.e3839c9d.js"
+    "static/css/main.8b508f85.css",
+    "static/js/main.e1186526.js"
   ]
 }

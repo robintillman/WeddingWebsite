@@ -6,18 +6,26 @@ import goldHeart from '../resources/images/goldheart.svg';
 
 const styles = makeStyles({
     navBar: {
-        padding: '1rem'
+        paddingLeft: '1rem',
+        paddingRight: '1rem'
     },
     brand: {
-    },
-    nav: {
-        width: 'calc(100% - 55px)',
+        width: '100px',
+        height: '50px',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-    },
-    firstLink: {
         margin: 0,
+        padding: 0
+    },
+    nav: {
+        width: 'calc(100% - 1rem - 100px)',
+        height: '50px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        margin: 0,
+        padding: 0
     },
     link: {
         marginLeft: '2rem'
@@ -27,6 +35,9 @@ const styles = makeStyles({
             opacity: '1',
             color: '#9c7c38'
         }
+    },
+    toggle: {
+        border: 'none'
     }
 });
 
@@ -37,27 +48,29 @@ function NavBar3() {
         <Navbar
             bg="light"
             variant="light"
-            expand="md"
+            expand="lg"
             sticky="top"
             className={classes.navBar}
         >
             <Navbar.Brand className={classes.brand}>
-                <Typography variant="h4" color="secondary">
-                    I
-                    <img 
-                        src={goldHeart}
-                        style={{ height: 45, width: 45 }}
-                        alt="Gold heart"
-                     />
-                    R
-                </Typography>
+                <Nav.Link href='/'>
+                    <Typography variant="h4" color="secondary">
+                        I
+                        <img 
+                            src={goldHeart}
+                            style={{ height: 45, width: 45 }}
+                            alt="Gold heart"
+                        />
+                        R
+                    </Typography>
+                </Nav.Link>
             </Navbar.Brand>
 
-            <Navbar.Toggle />
+            <Navbar.Toggle className={classes.toggle} />
             
             <Navbar.Collapse>
                 <Nav className={classes.nav}>
-                    <Nav.Link href="/" className={classes.firstLink}>
+                    <Nav.Link href="/" className={classes.link}>
                         <Typography variant="caption" color="primary" className={classes.linkText}>
                             Välkommen
                         </Typography>

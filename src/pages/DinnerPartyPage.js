@@ -3,9 +3,19 @@ import { makeStyles, Grid, Typography, Divider } from '@material-ui/core';
 import Map from '../components/Map/Map';
 import FurusundPhoto from '../resources/images/FurusundPhoto.jpg';
 import MapPin from '../resources/images/map-pin.svg';
+import RobertImage from '../resources/images/img_avatar.png';
+import SophiaImage from '../resources/images/img_avatar2.png';
+import EmailImage from '../resources/images/email_black.svg';
 
 const styles = makeStyles({
-  container: {
+  textSection: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: '2rem',
+    marginBottom: '2rem'
+  },
+  titleContainer: {
       display: 'flex',
       justifyContent: 'center'
   },
@@ -48,12 +58,32 @@ const styles = makeStyles({
   address: {
     paddingLeft: '10px'
   },
-  infoBox: {
+  textTitle: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  textContainer: {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: '1rem'
+    marginTop: '1rem',
+    marginBottom: '1rem'
   },
+  profileImage: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '15vw',
+    borderRadius: '50%',
+    marginTop: '1rem',
+    "@media (max-width: 959px)": {
+      width: '30vw',
+    },
+    "@media (max-width: 500px)": {
+      width: '40vw',
+    }
+  }
 });
 
 function DinnerPartyPage() {
@@ -62,7 +92,7 @@ function DinnerPartyPage() {
     return (
       <Grid item spacing={0} container>
           {/*Title*/}
-          <Grid item xs={12}>
+          <Grid item xs={12} className={classes.titleContainer}>
             <Typography variant="h2" color="secondary" className={classes.container}>
               Middag & fest
             </Typography>
@@ -73,16 +103,25 @@ function DinnerPartyPage() {
             <Divider style={{ background: 'black' }} variant="middle" className={classes.divider}/>
           </Grid>
 
-          {/*Image*/}
-          <Grid item xs={12} className={classes.image} />
+          {/*Furusund Värdshus*/}
+          <Grid container className={classes.textSection}>
+            <Grid item xs={12} className={classes.textContainer}>
+              <Typography variant="h3" color="primary" className={classes.textTitle}>
+                Furusund Värdshus
+              </Typography>
+            </Grid>
+            
+            {/*Image*/}
+            <Grid item xs={12} className={classes.image} />
 
-          {/*Divider*/}
-          <Grid item xs={12}>
-            <Divider style={{ background: 'black' }} variant="middle" className={classes.divider}/>
-          </Grid>
-          
-          {/*Infobox*/}
-          <Grid item xs={12} className={classes.infoBox}>
+            {/*Text*/}
+            <Grid item xs={12} className={classes.textContainer}>
+              <Typography variant="body1" color="primary">
+                Mauris pharetra convallis diam, fringilla efficitur sapien. Sed congue tellus ut ultricies luctus. Vestibulum in ligula lobortis, tempor elit eget, placerat odio. Vestibulum ultrices condimentum odio et maximus. Sed efficitur tellus nec nisl vulputate tempus nec et orci.
+              </Typography>
+            </Grid>
+
+            {/*Address*/}
             <Grid
               item xs={12}
               className={classes.addressContainer}
@@ -90,8 +129,8 @@ function DinnerPartyPage() {
             >
               <img 
                 src={MapPin}
-                className={classes.mapPin}
                 alt="Map pin"
+                className={classes.mapPin}
               />
               <Typography variant="caption" color="secondary" className={classes.address}>
                 Furusund Värdshus<br/>
@@ -99,22 +138,105 @@ function DinnerPartyPage() {
                 760 19 Furusund
               </Typography>
             </Grid>
-          </Grid>
 
-          {/*Text*/}
-          <Grid item xs={12} className={classes.text}>
-            <Typography variant="body1" color="primary">
-              Mauris pharetra convallis diam, fringilla efficitur sapien. Sed congue tellus ut ultricies luctus. Vestibulum in ligula lobortis, tempor elit eget, placerat odio. Vestibulum ultrices condimentum odio et maximus. Sed efficitur tellus nec nisl vulputate tempus nec et orci. Nunc volutpat, lectus et cursus varius, nunc eros pellentesque tellus, non rhoncus nibh risus nec elit. Quisque sit amet blandit quam, vel mattis tellus. Vivamus sed leo quis risus tempor vehicula. Praesent vestibulum volutpat nisl non imperdiet. Praesent cursus felis vel odio fringilla, id volutpat nibh venenatis. Cras molestie quis lacus sed pellentesque. Morbi elementum quam a blandit lobortis. Vivamus feugiat sit amet massa at porta. Cras facilisis metus eu vehicula placerat. Pellentesque at dignissim velit, ac varius ex. Donec placerat tincidunt sem at malesuada.
-              <br/><br/>
-              Integer quis varius nibh, quis mollis velit. Sed quam sem, interdum ac lacus a, porta egestas nisl. Donec condimentum dolor lectus, luctus finibus dui ullamcorper eget. Nulla ante turpis, accumsan vel finibus eu, luctus et sapien. Ut at ex bibendum, bibendum magna eu, finibus arcu. Etiam nisl nunc, volutpat eget metus sit amet, interdum tincidunt sem. Pellentesque nec semper magna. Donec malesuada nisl nec urna lacinia, ac commodo nibh volutpat. Nulla porttitor, nisi ac rutrum egestas, mi tortor lacinia diam, et malesuada sem sapien vel dolor.
-              <br/><br/>
-              Sidan uppdateras löpande med information..
-            </Typography>
+            {/*Text*/}
+            <Grid item xs={12} className={classes.textContainer}>
+              <Typography variant="body1" color="primary">
+                Mauris pharetra convallis diam, fringilla efficitur sapien. Sed congue tellus ut ultricies luctus. Vestibulum in ligula lobortis, tempor elit eget, placerat odio. Vestibulum ultrices condimentum odio et maximus. Sed efficitur tellus nec nisl vulputate tempus nec et orci.
+              </Typography>
+            </Grid>
           </Grid>
 
           {/*Divider*/}
           <Grid item xs={12}>
             <Divider style={{ background: 'black' }} variant="middle" className={classes.divider}/>
+          </Grid>
+
+          {/*Toastmaster & Toastmadame*/}
+          <Grid container className={classes.textSection}>
+            <Grid item xs={12} className={classes.textContainer}>
+              <Typography variant="h3" color="primary" className={classes.textTitle}>
+                Toastmadame & toastmaster
+              </Typography>
+            </Grid>
+            <Grid item xs={12} className={classes.textContainer}>
+              <Typography variant="body1" color="primary">
+                Mauris pharetra convallis diam, fringilla efficitur sapien. Sed congue tellus ut ultricies luctus. Vestibulum in ligula lobortis, tempor elit eget, placerat odio. Vestibulum ultrices condimentum odio et maximus. Sed efficitur tellus nec nisl vulputate tempus nec et orci.
+              </Typography>
+            </Grid>
+
+            {/*Toastmaster & Toastmadame - Profiles*/}
+            <Grid container spacing={5}>
+              <Grid item xs={12} md={6} container>
+                <Grid item xs={12} className={classes.profileImage}>
+                  <img 
+                    src={SophiaImage}
+                    alt="Sophia"
+                    className={classes.profileImage}
+                  />
+                </Grid>
+                <Grid item xs={12} className={classes.textContainer}>
+                  <Typography variant="h4" color="primary" className={classes.textTitle}>
+                    Sophia
+                  </Typography>
+                </Grid>
+                <Grid item xs={12} className={classes.textContainer}>
+                  <Typography variant="body1" color="primary">
+                    Mauris pharetra convallis diam, fringilla efficitur sapien. Sed congue tellus ut ultricies luctus. Vestibulum in ligula lobortis, tempor elit eget, placerat odio. Vestibulum ultrices condimentum odio et maximus. Sed efficitur tellus nec nisl vulputate tempus nec et orci.
+                  </Typography>
+                </Grid>
+              </Grid>
+              <Grid item xs={12} md={6} container>
+                <Grid item xs={12} className={classes.profileImage}>
+                  <img 
+                    src={RobertImage}
+                    alt="Robert"
+                    className={classes.profileImage}
+                  />
+                </Grid>
+                <Grid item xs={12} className={classes.textContainer}>
+                  <Typography variant="h4" color="primary" className={classes.textTitle}>
+                    Robert
+                  </Typography>
+                </Grid>
+                <Grid item xs={12} className={classes.textContainer}>
+                  <Typography variant="body1" color="primary">
+                    Mauris pharetra convallis diam, fringilla efficitur sapien. Sed congue tellus ut ultricies luctus. Vestibulum in ligula lobortis, tempor elit eget, placerat odio. Vestibulum ultrices condimentum odio et maximus. Sed efficitur tellus nec nisl vulputate tempus nec et orci.
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+            <Grid item xs={12} className={classes.textContainer}>
+                <Typography variant="h4" color="primary">
+                  Föranmäl tal
+                </Typography>
+            </Grid>
+            <Grid item xs={12} className={classes.textContainer}>
+                <img
+                  src={EmailImage}
+                  alt="E-post"
+                  style={{ width: 40, height: 40 }}
+                  onClick={()=> window.open("mailto:robin.tillman92@gmail.com", "_blank")}
+                />
+            </Grid>
+          </Grid>
+
+          {/*Divider*/}
+          <Grid item xs={12}>
+            <Divider style={{ background: 'black' }} variant="middle" className={classes.divider}/>
+          </Grid>
+          
+          <Grid container className={classes.textSection}>
+            <Grid item xs={12} className={classes.textContainer}>
+              <Typography variant="body1" color="primary">
+                Sidan uppdateras löpande med information..
+              </Typography>
+            </Grid>
+          </Grid>
+
+          {/*Divider*/}
+          <Grid item xs={12}>
+            <Divider style={{ background: 'black' }} className={classes.divider}/>
           </Grid>
 
           {/*Map*/}

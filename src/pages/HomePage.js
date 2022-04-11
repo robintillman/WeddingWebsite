@@ -25,20 +25,30 @@ const styles = makeStyles({
         justifyContent: 'center',
         alignItems: 'center'
     },
-    xsTextContainer: {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        "@media (min-width: 576px)": {
-          display: 'none'
+    titleText: {
+        fontSize: '96px',
+        "@media (max-width: 751px)": {
+            fontSize: '12vw'
         }
     },
-    mdTextContainer: {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        "@media (max-width: 575px)": {
-          display: 'none'
+    nameText: {
+        fontSize: '60px',
+        "@media (max-width: 620px)": {
+            fontSize: '9vw'
+        }
+    },
+    goldHeart: {
+        height: '55px', 
+        width: '55px',
+        "@media (max-width: 620px)": {
+            height: '8vw', 
+            width: '8vw',
+        }
+    },
+    dateText: {
+        fontSize: '48px',
+        "@media (max-width: 620px)": {
+            fontSize: '8vw'
         }
     },
     divider: {
@@ -62,7 +72,7 @@ function HomePage() {
             {/*Title*/}
             <Grid item xs={12} className={classes.titleContainer} container>
                 <Grid item xs={12} className={classes.textContainer}>
-                    <Typography variant="h1" color="secondary">
+                    <Typography variant="h1" color="secondary" className={classes.titleText}>
                         Vi gifter oss
                     </Typography>
                 </Grid>
@@ -73,55 +83,23 @@ function HomePage() {
             </Grid>
             {/*Main content*/}
             <Grid item xs={12} className={classes.container} container>
-                <Grid item xs={12} className={classes.mdTextContainer}>
-                    <Typography variant="h2" color="primary">
+                <Grid item xs={12} className={classes.textContainer}>
+                    <Typography variant="h2" color="primary" className={classes.nameText}>
                         Isabella
                     </Typography>
                     <img 
                         src={goldHeart}
-                        style={{ height: 55, width: 55 }}
                         alt="Gold heart"
+                        className={classes.goldHeart}
                     />
-                    <Typography variant="h2" color="primary">
-                        Robin
-                    </Typography>
-                </Grid>            
-                <Grid item xs={12} md={4} className={classes.xsTextContainer}>
-                    <Typography variant="h2" color="primary">
-                        Isabella
-                    </Typography>
-                </Grid>
-                <Grid item xs={12} md={4} className={classes.xsTextContainer}>
-                    <img 
-                        src={goldHeart}
-                        style={{ height: 55, width: 55 }}
-                        alt="Gold heart"
-                    />
-                </Grid>
-                <Grid item xs={12} md={4}>
-                    <Typography variant="h2" color="primary" className={classes.xsTextContainer}>
+                    <Typography variant="h2" color="primary" className={classes.nameText}>
                         Robin
                     </Typography>
                 </Grid>
                 <Grid item xs={12} className={classes.spacer} />
-                <Grid item xs={12} className={classes.mdTextContainer}>
-                    <Typography variant="h3" color="primary">
+                <Grid item xs={12} className={classes.textContainer}>
+                    <Typography variant="h3" color="primary" className={classes.dateText}>
                         17 september 2022
-                    </Typography>
-                </Grid>
-                <Grid item xs={12} md={4}>
-                    <Typography variant="h3" color="primary" className={classes.xsTextContainer}>
-                        17
-                    </Typography>
-                </Grid>
-                <Grid item xs={12} md={4} className={classes.textContainer}>
-                    <Typography variant="h3" color="primary" className={classes.xsTextContainer}>
-                        september
-                    </Typography>
-                </Grid>
-                <Grid item xs={12} md={4}>
-                    <Typography variant="h3" color="primary" className={classes.xsTextContainer}>
-                        2022
                     </Typography>
                 </Grid>
             </Grid>
