@@ -12,9 +12,10 @@ const styles = makeStyles({
     marginTop: '2rem',
     marginBottom: '2rem'
   },
-  titleContainer: {
-      display: 'flex',
-      justifyContent: 'center'
+  container: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   image: {
     justifyContent: 'center',
@@ -66,7 +67,19 @@ const styles = makeStyles({
     alignItems: 'center',
     marginTop: '1rem',
     marginBottom: '1rem'
-  }
+  },
+  titleText: {
+    fontSize: '60px',
+    "@media (max-width: 409px)": {
+        fontSize: '12vw'
+    }
+  },
+  subtitleText: {
+    fontSize: '48px',
+    "@media (max-width: 450px)": {
+        fontSize: '8vw'
+    }
+  },
 });
 
 function MarriagePage() {
@@ -75,8 +88,8 @@ function MarriagePage() {
     return (
       <Grid item spacing={0} container>
           {/*Title*/}
-          <Grid item xs={12}>
-            <Typography variant="h2" color="secondary" className={classes.titleContainer}>
+          <Grid item xs={12} className={classes.container}>
+            <Typography variant="h2" color="secondary" className={classes.titleText}>
               Vigsel
             </Typography>
           </Grid>
@@ -89,7 +102,7 @@ function MarriagePage() {
           {/*Norrtälje Kyrka*/}
           <Grid container className={classes.textSection}>
             <Grid item xs={12} className={classes.textContainer}>
-              <Typography variant="h3" color="primary" className={classes.textTitle}>
+              <Typography variant="h3" color="primary" className={classes.subtitleText}>
                 Norrtälje Kyrka
               </Typography>
             </Grid>

@@ -6,7 +6,6 @@ import goldHeart from '../resources/images/goldheart.svg';
 
 const styles = makeStyles({
     navBar: {
-        paddingLeft: '1rem',
         paddingRight: '1rem'
     },
     brand: {
@@ -19,7 +18,7 @@ const styles = makeStyles({
         padding: 0
     },
     nav: {
-        width: 'calc(100% - 2rem - 130px)',
+        width: 'calc(100% - 1rem - 130px)',
         minHeight: '50px',
         display: 'flex',
         justifyContent: 'center',
@@ -39,8 +38,7 @@ const styles = makeStyles({
     },
     toggle: {
         border: 'none',
-        width: '30px',
-        border: '1px solid black'
+        width: '30px'
     }
 });
 
@@ -57,15 +55,11 @@ function NavBar3() {
         >
             <Navbar.Brand className={classes.brand}>
                 <Nav.Link href='/'>
-                    <Typography variant="h4" color="secondary">
-                        I
-                        <img 
-                            src={goldHeart}
-                            style={{ height: 45, width: 45 }}
-                            alt="Gold heart"
-                        />
-                        R
-                    </Typography>
+                    <img 
+                        src={goldHeart}
+                        style={{ height: 45, width: 45 }}
+                        alt="Gold heart"
+                    />
                 </Nav.Link>
             </Navbar.Brand>
 

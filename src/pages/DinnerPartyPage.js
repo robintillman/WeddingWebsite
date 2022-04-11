@@ -15,9 +15,22 @@ const styles = makeStyles({
     marginTop: '2rem',
     marginBottom: '2rem'
   },
-  titleContainer: {
+  container: {
       display: 'flex',
-      justifyContent: 'center'
+      justifyContent: 'center',
+      alignItems: 'center',
+  },
+  titleText: {
+    fontSize: '60px',
+    "@media (max-width: 409px)": {
+        fontSize: '12vw'
+    }
+  },
+  subtitleText: {
+    fontSize: '48px',
+    "@media (max-width: 450px)": {
+        fontSize: '8vw'
+    }
   },
   image: {
     justifyContent: 'center',
@@ -58,11 +71,6 @@ const styles = makeStyles({
   address: {
     paddingLeft: '10px'
   },
-  textTitle: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
   textContainer: {
     display: 'flex',
     justifyContent: 'center',
@@ -92,8 +100,8 @@ function DinnerPartyPage() {
     return (
       <Grid item spacing={0} container>
           {/*Title*/}
-          <Grid item xs={12} className={classes.titleContainer}>
-            <Typography variant="h2" color="secondary" className={classes.container}>
+          <Grid item xs={12} className={classes.container}>
+            <Typography variant="h2" color="secondary" className={classes.titleText}>
               Middag & fest
             </Typography>
           </Grid>
@@ -106,7 +114,7 @@ function DinnerPartyPage() {
           {/*Furusund Värdshus*/}
           <Grid container className={classes.textSection}>
             <Grid item xs={12} className={classes.textContainer}>
-              <Typography variant="h3" color="primary" className={classes.textTitle}>
+              <Typography variant="h3" color="primary" className={classes.subtitleText}>
                 Furusund Värdshus
               </Typography>
             </Grid>
@@ -155,7 +163,7 @@ function DinnerPartyPage() {
           {/*Toastmaster & Toastmadame*/}
           <Grid container className={classes.textSection}>
             <Grid item xs={12} className={classes.textContainer}>
-              <Typography variant="h3" color="primary" className={classes.textTitle}>
+              <Typography variant="h3" color="primary" className={classes.subtitleText}>
                 Toastmadame & toastmaster
               </Typography>
             </Grid>
@@ -218,6 +226,29 @@ function DinnerPartyPage() {
                   style={{ width: 40, height: 40 }}
                   onClick={()=> window.open("mailto:robin.tillman92@gmail.com", "_blank")}
                 />
+            </Grid>
+          </Grid>
+
+          {/*Divider*/}
+          <Grid item xs={12}>
+            <Divider style={{ background: 'black' }} variant="middle" className={classes.divider}/>
+          </Grid>
+
+          {/*Furusund Värdshus*/}
+          <Grid container className={classes.textSection}>
+            <Grid item xs={12} className={classes.textContainer}>
+              <Typography variant="h3" color="primary" className={classes.subtitleText}>
+                Boende
+              </Typography>
+            </Grid>
+
+            {/*Text*/}
+            <Grid item xs={12} className={classes.textContainer}>
+              <Typography variant="body1" color="primary">
+                Mauris pharetra convallis diam, fringilla efficitur sapien. Sed congue tellus ut ultricies luctus. Vestibulum in ligula lobortis, tempor elit eget, placerat odio. Vestibulum ultrices condimentum odio et maximus. Sed efficitur tellus nec nisl vulputate tempus nec et orci.
+                <br/><br/>
+                Mauris pharetra convallis diam, fringilla efficitur sapien. Sed congue tellus ut ultricies luctus. Vestibulum in ligula lobortis, tempor elit eget, placerat odio. Vestibulum ultrices condimentum odio et maximus. Sed efficitur tellus nec nisl vulputate tempus nec et orci.
+              </Typography>
             </Grid>
           </Grid>
 

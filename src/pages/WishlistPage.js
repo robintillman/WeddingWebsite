@@ -18,7 +18,19 @@ const styles = makeStyles({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-    }
+    },
+    titleText: {
+      fontSize: '60px',
+      "@media (max-width: 409px)": {
+          fontSize: '12vw'
+      }
+    },
+    subtitleText: {
+      fontSize: '48px',
+      "@media (max-width: 450px)": {
+          fontSize: '8vw'
+      }
+    },
 });
 
 function WishlistPage() {
@@ -28,8 +40,8 @@ function WishlistPage() {
         <Grid item spacing={2} container>
 
             {/*Title*/}
-            <Grid item xs={12}>
-                <Typography variant="h2" color="secondary" className={classes.container}>
+            <Grid item xs={12} className={classes.container}>
+                <Typography variant="h2" color="secondary" className={classes.titleText}>
                     Önskelista
                 </Typography>
             </Grid>
@@ -40,8 +52,8 @@ function WishlistPage() {
             </Grid>
 
             {/*Text*/}
-            <Grid item xs={12}>
-                <Typography variant="h3" color="primary" className={classes.wishContainer}>
+            <Grid item xs={12} className={classes.container}>
+                <Typography variant="h3" color="primary" className={classes.subtitleText}>
                     Resebidrag
                 </Typography>
             </Grid>

@@ -26,7 +26,10 @@ const styles = makeStyles({
         minHeight: '74vh',
         padding: "3rem",
         marginTop: "1rem",
-        marginBottom: "1rem"
+        marginBottom: "1rem",
+        "@media (max-width: 1000px)": {
+            padding: "1rem"
+        }
     }
 });
 

@@ -48,11 +48,12 @@ function CountDownClock() {
     };
 
     useEffect(() => {
+        const intervalRef = interval.current
         startTimer();
         return () => {
-            clearInterval(interval.current);
+            clearInterval(intervalRef);
         };
-    });
+    }, []);
 
     return (
         <Grid item xs={12} spacing={2} className={classes.container} container>
