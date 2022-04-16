@@ -70,7 +70,7 @@ function HotelPage() {
         {/*Image*/}
         <Grid item xs={12} className={classes.image} />
 
-        {/*Boende text*/}
+        {/*Boende text
         <Grid item xs={12} className={classes.textContainer}>
             <Typography variant="body1" color="primary">
                 Furusund Värdshus har förutom en fantastisk restaurang även ett nyrenoverat 4-stjärnigt boutiquehotell i samma byggnad, och under bröllopskvällen är det vårat.
@@ -85,7 +85,7 @@ function HotelPage() {
                 <br/><br/>
                 Anmäl ditt intresse senast i samband med att ni svarar om ni tänker närvara på bröllopet!
             </Typography>
-        </Grid>
+        </Grid>*/}
 
         {/*Divider*/}
         <Grid item xs={12}>

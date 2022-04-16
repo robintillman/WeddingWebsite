@@ -99,7 +99,7 @@ function NavBar() {
                                 Kvällen
                             </Typography>
                         </NavDropdown.Item>
-                        <NavDropdown.Item href="/middagochfest/toast" className={classes.dropdownLinkItem}>
+                        {/*<NavDropdown.Item href="/middagochfest/toast" className={classes.dropdownLinkItem}>
                             <Typography variant="caption" color="primary" className={classes.linkText}>
                                 Toastmadame & toastmaster
                             </Typography>
@@ -108,7 +108,7 @@ function NavBar() {
                             <Typography variant="caption" color="primary" className={classes.linkText}>
                                 Boende
                             </Typography>
-                        </NavDropdown.Item>
+                        </NavDropdown.Item>*/}
                     </NavDropdown>
 
                     <Nav.Link href="/onskelista" className={classes.link}>

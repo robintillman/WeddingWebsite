@@ -15,7 +15,6 @@ const styles = makeStyles({
   container: {
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center',
   },
   image: {
     justifyContent: 'center',
@@ -24,11 +23,11 @@ const styles = makeStyles({
     backgroundPosition: 'center', 
     backgroundSize: 'cover', 
     backgroundRepeat: 'no-repeat',
-    height: '25vh',
+    minHeight: '25vh',
     borderRadius: 5,
     display: 'flex',
     "@media (min-width: 1200px)": {
-      height: '40vh',
+      minHeight: '40vh',
     }
   },
   divider: {
@@ -43,43 +42,34 @@ const styles = makeStyles({
     minHeight: '25vh',
     borderRadius: 5
   },
-  addressContainer: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: '1rem',
-    marginBottom: '2rem',
-    "&:hover": {
-      cursor: "pointer"
-    }
-  },
-  address: {
-    paddingLeft: '10px'
-  },
-  textTitle: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
   textContainer: {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: '1rem',
-    marginBottom: '1rem'
+    paddingLeft: '1rem'
+  },
+  addressContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  address: {
+    paddingLeft: '10px',
+    "&:hover": {
+      cursor: "pointer"
+    }
+  },
+  mapPin: {
+    "&:hover": {
+      cursor: "pointer"
+    }
   },
   titleText: {
     fontSize: '60px',
     "@media (max-width: 409px)": {
         fontSize: '12vw'
     }
-  },
-  subtitleText: {
-    fontSize: '48px',
-    "@media (max-width: 450px)": {
-        fontSize: '8vw'
-    }
-  },
+  }
 });
 
 function MarriagePage() {
@@ -99,52 +89,36 @@ function MarriagePage() {
             <Divider style={{ background: 'black' }} variant="middle" className={classes.divider}/>
           </Grid>
 
-          {/*Norrtälje Kyrka*/}
-          <Grid container className={classes.textSection}>
-            <Grid item xs={12} className={classes.textContainer}>
-              <Typography variant="h3" color="primary" className={classes.subtitleText}>
-                Norrtälje Kyrka
-              </Typography>
-            </Grid>
-          
-            {/*Image*/}
-            <Grid item xs={12} className={classes.image} />
+          {/*Image*/}
+          <Grid item xs={12} md={4} className={classes.image} />
 
-            {/*Text*/}
+          <Grid item xs={12} md={8} className={classes.container} container>
+            {/*Text
             <Grid item xs={12} className={classes.textContainer}>
               <Typography variant="body1" color="primary">
                 Mauris pharetra convallis diam, fringilla efficitur sapien. Sed congue tellus ut ultricies luctus. Vestibulum in ligula lobortis, tempor elit eget, placerat odio. Vestibulum ultrices condimentum odio et maximus. Sed efficitur tellus nec nisl vulputate tempus nec et orci.
               </Typography>
-            </Grid>
+            </Grid>*/}
 
             {/*Address*/}
-            <Grid
-              item xs={12}
-              className={classes.addressContainer}
-              onClick={()=> window.open("https://www.google.com/maps/dir/Norrt%C3%A4lje+kyrka,+Kyrkogatan,+Norrt%C3%A4lje//@59.7594774,18.635726,12z/data=!3m1!4b1!4m9!4m8!1m5!1m1!1s0x465ff64ccb53ae73:0x9cc58a1d76853197!2m2!1d18.705821!2d59.7594125!1m0!3e0", "_blank")}
-            >
+            <Grid item xs={12} className={classes.addressContainer}>
               <img 
                 src={MapPin} 
                 className={classes.mapPin}
                 alt="Map pin"
+                onClick={()=> window.open("https://www.google.com/maps/dir/Norrt%C3%A4lje+kyrka,+Kyrkogatan,+Norrt%C3%A4lje//@59.7594774,18.635726,12z/data=!3m1!4b1!4m9!4m8!1m5!1m1!1s0x465ff64ccb53ae73:0x9cc58a1d76853197!2m2!1d18.705821!2d59.7594125!1m0!3e0", "_blank")}
               />
-              <Typography variant="caption" color="secondary" className={classes.address}>
+              <Typography 
+                variant="caption" 
+                color="secondary" 
+                className={classes.address}
+                onClick={()=> window.open("https://www.google.com/maps/dir/Norrt%C3%A4lje+kyrka,+Kyrkogatan,+Norrt%C3%A4lje//@59.7594774,18.635726,12z/data=!3m1!4b1!4m9!4m8!1m5!1m1!1s0x465ff64ccb53ae73:0x9cc58a1d76853197!2m2!1d18.705821!2d59.7594125!1m0!3e0", "_blank")}
+              >
                 Norrtälje kyrka<br/>
                 Kyrkogatan 4,<br/>
                 761 30 Norrtälje
               </Typography>
             </Grid>
-
-            {/*Text*/}
-            <Grid item xs={12} className={classes.textContainer}>
-              <Grid item xs={12} className={classes.text}>
-                <Typography variant="body1" color="primary">
-                  Mauris pharetra convallis diam, fringilla efficitur sapien. Sed congue tellus ut ultricies luctus. Vestibulum in ligula lobortis, tempor elit eget, placerat odio. Vestibulum ultrices condimentum odio et maximus. Sed efficitur tellus nec nisl vulputate tempus nec et orci. Nunc volutpat, lectus et cursus varius, nunc eros pellentesque tellus, non rhoncus nibh risus nec elit. Quisque sit amet blandit quam, vel mattis tellus. Vivamus sed leo quis risus tempor vehicula. Praesent vestibulum volutpat nisl non imperdiet. Praesent cursus felis vel odio fringilla, id volutpat nibh venenatis. Cras molestie quis lacus sed pellentesque. Morbi elementum quam a blandit lobortis. Vivamus feugiat sit amet massa at porta. Cras facilisis metus eu vehicula placerat. Pellentesque at dignissim velit, ac varius ex. Donec placerat tincidunt sem at malesuada.
-                  <br/><br/>
-                  Integer quis varius nibh, quis mollis velit. Sed quam sem, interdum ac lacus a, porta egestas nisl. Donec condimentum dolor lectus, luctus finibus dui ullamcorper eget. Nulla ante turpis, accumsan vel finibus eu, luctus et sapien. Ut at ex bibendum, bibendum magna eu, finibus arcu. Etiam nisl nunc, volutpat eget metus sit amet, interdum tincidunt sem. Pellentesque nec semper magna. Donec malesuada nisl nec urna lacinia, ac commodo nibh volutpat. Nulla porttitor, nisi ac rutrum egestas, mi tortor lacinia diam, et malesuada sem sapien vel dolor.
-                </Typography>
-              </Grid>
-              </Grid>
           </Grid>
 
           {/*Divider*/}
@@ -152,12 +126,10 @@ function MarriagePage() {
             <Divider style={{ background: 'black' }} className={classes.divider}/>
           </Grid>
           
-          <Grid container className={classes.textSection}>
-            <Grid item xs={12} className={classes.textContainer}>
-              <Typography variant="body1" color="primary">
-                Sidan uppdateras löpande med information..
-              </Typography>
-            </Grid>
+          <Grid item xs={12} className={classes.textContainer}>
+            <Typography variant="body1" color="primary">
+              Sidan uppdateras löpande med information..
+            </Typography>
           </Grid>
 
           {/*Divider*/}
