@@ -51,7 +51,11 @@ const styles = makeStyles({
   addressContainer: {
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    "@media (max-width: 959px)": {
+      marginTop: '1rem',
+      marginBottom: '1rem',
+    }
   },
   address: {
     paddingLeft: '10px',
@@ -90,9 +94,9 @@ function MarriagePage() {
           </Grid>
 
           {/*Image*/}
-          <Grid item xs={12} md={4} className={classes.image} />
+          <Grid item xs={12} md={5} className={classes.image} />
 
-          <Grid item xs={12} md={8} className={classes.container} container>
+          <Grid item xs={12} md={7} className={classes.container} container>
             {/*Text
             <Grid item xs={12} className={classes.textContainer}>
               <Typography variant="body1" color="primary">
