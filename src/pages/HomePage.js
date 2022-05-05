@@ -104,7 +104,7 @@ function HomePage() {
                 </Grid>
             </Grid>
             
-            {/*Important info
+            {/*Important info*/}
             <Grid item xs={12} className={classes.infoContainer} container>
                 <Grid item xs={12}>
                     <Typography variant="h6" color="primary">
@@ -121,12 +121,12 @@ function HomePage() {
             <Grid item xs={12} className={classes.infoContainer} container>
                 <Grid item xs={12}>
                     <Typography variant="h6" color="primary">
-                        Klädsel - Mörk kostym
+                        Klädsel - Kavaj
                     </Typography>
                 </Grid>
                 <Grid item xs={12}>
                     <Typography variant="body1" color="primary">
-                        Mörk kostym respektive knälång klänning eller kjol. 
+                       Kostym respektive klänning eller kjol. 
                     </Typography>
                 </Grid>
             </Grid>
@@ -153,7 +153,7 @@ function HomePage() {
                         En fotograf kommer att finnas på plats under vigseln och brudskålen.<br/>Kontakta oss om ni inte vill vara med på bild.
                     </Typography>
                 </Grid>
-            </Grid>*/}
+            </Grid>
 
             <Grid item xs={12} className={classes.container}>
                 <Typography variant="body1" color="primary">

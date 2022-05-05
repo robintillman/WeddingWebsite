@@ -102,22 +102,23 @@ function DinnerPartyPage() {
           {/*Image*/}
           <Grid item xs={12} className={classes.image} />
 
-          {/*Text
+          {/*Text*/}
           <Grid item xs={12} className={classes.textContainer}>
             <Typography variant="body1" color="primary">
-              Efter vigseln när brudparet lämnat kyrkan tar sig alla som vill vara med under kvällen till Furusund Värdshus.
-              Värdshuset ligger skärgårdsidylliskt precis vid vattnet ungefär 30min bilfärd från Norrtälje, så långt ut i skärgården du kommer utan båt.
+              Efter vigseln när brudparet lämnat kyrkan tar sig alla som vill vara med under kvällen till Furusund Värdshus på eget bevåg.
+              Värdshuset ligger skärgårdsidylliskt precis vid vattnet ungefär 30min bilfärd från Norrtälje, så långt ut i skärgården man kommer utan båt.
             
               <br/><br/>
 
-              Här bjuds en 3-rätters i den fantastiska restaurangen som vi har fått vara med och ta fram tillsammans med köket.
+              I värdshusets fantastiska restaurang bjuder vi på en 3-rätters som vi har fått vara med och ta fram tillsammans med köket.
+              Om ni har allergier eller specialkost vänligen meddela detta senast i samband med att ni O.S.A:r.
               
               <br/><br/>
 
-              Vill du slippa fixa hem skjuts till kvällen?<br/>
-              Värdshuset har även ett 4-stjärnigt hotell i samma byggnad, kika under Boende uppe i menyn om du är intresserad!
+              Vill ni slippa fixa skjuts hem till kvällen?<br/>
+              Värdshuset har även ett 4-stjärnigt hotell i samma byggnad, kika under Boende uppe i menyn om ni är intresserade!
             </Typography>
-          </Grid>*/}
+          </Grid>
 
           {/*Address*/}
           <Grid item xs={12} className={classes.addressContainer}>

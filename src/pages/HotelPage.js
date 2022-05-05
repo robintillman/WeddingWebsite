@@ -70,22 +70,20 @@ function HotelPage() {
         {/*Image*/}
         <Grid item xs={12} className={classes.image} />
 
-        {/*Boende text
+        {/*Boende text*/}
         <Grid item xs={12} className={classes.textContainer}>
             <Typography variant="body1" color="primary">
-                Furusund Värdshus har förutom en fantastisk restaurang även ett nyrenoverat 4-stjärnigt boutiquehotell i samma byggnad, och under bröllopskvällen är det vårat.
+                Furusund Värdshus har förutom en fantastisk restaurang även ett nyrenoverat 4-stjärnigt i samma byggnad, och under bröllopskvällen är det vårt.
                 <br/><br/>
-                För dig som vill stanna över natten kan vi därför erbjuda övernattning inkl. frukost i något av de sexton hotellrummen till ett förmånligt pris (jämfört med om ni bokat själva).
+                För dig som vill stanna över natten kan vi därför erbjuda övernattning inkl. frukost i något av de sexton hotellrummen till ett förmånligt pris.
                 Ni anmäler intresse till oss eftersom vi abonnerat värdshuset (ni bokar alltså inte via Furusund Värdshus egen hemsida), och vi kommer sedermera att kontakta alla intresserade med förslag på pris och rum.
-                Det finns såväl enkel- som dubbelrum och sviter (bröllopsviten har vi dock paxat), och vi kommer lägga pusslet med att tillgodose allas önskningar.
-                <br/><br/>
-                Har du en fyrbent vän du behöver få ta med dig? Säg till i förväg, hund är endast tillåtet i några rum.
+                Vi kommer att lägga pusslet med att tillgodose allas önskningar.
                 <br/><br/>
                 Skulle intresset bli så stort att alla inte får plats finns det även vandrarhem ett stenkast från värdshuset!
                 <br/><br/>
                 Anmäl ditt intresse senast i samband med att ni svarar om ni tänker närvara på bröllopet!
             </Typography>
-        </Grid>*/}
+        </Grid>
 
         {/*Divider*/}
         <Grid item xs={12}>

@@ -97,13 +97,25 @@ function MarriagePage() {
           <Grid item xs={12} md={5} className={classes.image} />
 
           <Grid item xs={12} md={7} className={classes.container} container>
-            {/*Text
-            <Grid item xs={12} className={classes.textContainer}>
-              <Typography variant="body1" color="primary">
-                Mauris pharetra convallis diam, fringilla efficitur sapien. Sed congue tellus ut ultricies luctus. Vestibulum in ligula lobortis, tempor elit eget, placerat odio. Vestibulum ultrices condimentum odio et maximus. Sed efficitur tellus nec nisl vulputate tempus nec et orci.
-              </Typography>
-            </Grid>*/}
-
+            {/*Text*/}
+            <Grid item xs={12} className={classes.textContainer} container>
+              <Grid item xs={12} className={classes.textContainer}>
+                <Typography variant="h5" color="primary">
+                  Norrtälje Kyrka kl 14:30 
+                </Typography>
+              </Grid>
+              <Grid item xs={12} className={classes.textContainer}>
+                <Typography variant="body1" color="primary">
+                  Vi träffades i gymnasiet och vi har valt att ha vår vigsel i 
+                  Norrtälje Kyrka eftersom det är den kyrka där vi hade våra skolavslutningar. 
+                </Typography>
+              </Grid>
+              <Grid item xs={12} className={classes.textContainer}>
+                <Typography variant="body1" color="primary">
+                  Efter vigseln väntar brudskål, middag & fest i Furusund Värdshus dit man tar sig på eget bevåg.
+                </Typography>
+              </Grid>
+            </Grid>
             {/*Address*/}
             <Grid item xs={12} className={classes.addressContainer}>
               <img 

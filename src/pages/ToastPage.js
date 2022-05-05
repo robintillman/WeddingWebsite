@@ -72,7 +72,8 @@ function ToastPage() {
             {/*Text*/}
             <Grid item xs={12} className={classes.textContainer}>
                 <Typography variant="body1" color="primary">
-                    Mauris pharetra convallis diam, fringilla efficitur sapien. Sed congue tellus ut ultricies luctus. Vestibulum in ligula lobortis, tempor elit eget, placerat odio. Vestibulum ultrices condimentum odio et maximus. Sed efficitur tellus nec nisl vulputate tempus nec et orci.
+                    Våra värdar för kvällen heter Sophia & Robert och det är dessa personer som ska se till att allt flyter på hela kvällen.
+                    Det är även Sophia & Robert man vänder sig till om man vill hålla tal, vilket man ska anmäla i förväg.
                 </Typography>
             </Grid>
 
@@ -93,11 +94,11 @@ function ToastPage() {
                             Sophia
                         </Typography>
                     </Grid>
-                    <Grid item xs={12} className={classes.textContainer}>
+                    {/*<Grid item xs={12} className={classes.textContainer}>
                         <Typography variant="body1" color="primary">
                             Mauris pharetra convallis diam, fringilla efficitur sapien. Sed congue tellus ut ultricies luctus. Vestibulum in ligula lobortis, tempor elit eget, placerat odio. Vestibulum ultrices condimentum odio et maximus. Sed efficitur tellus nec nisl vulputate tempus nec et orci.
                         </Typography>
-                    </Grid>
+                    </Grid>*/}
                 </Grid>
 
                 {/*Robert*/}
@@ -114,11 +115,11 @@ function ToastPage() {
                             Robert
                         </Typography>
                     </Grid>
-                    <Grid item xs={12} className={classes.textContainer}>
+                    {/*<Grid item xs={12} className={classes.textContainer}>
                         <Typography variant="body1" color="primary">
                             Mauris pharetra convallis diam, fringilla efficitur sapien. Sed congue tellus ut ultricies luctus. Vestibulum in ligula lobortis, tempor elit eget, placerat odio. Vestibulum ultrices condimentum odio et maximus. Sed efficitur tellus nec nisl vulputate tempus nec et orci.
                         </Typography>
-                    </Grid>
+                    </Grid>*/}
                 </Grid>
             </Grid>
             
