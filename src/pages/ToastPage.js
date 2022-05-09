@@ -155,10 +155,10 @@ function ToastPage() {
                 <Divider style={{ background: 'black' }} className={classes.divider}/>
             </Grid>
 
-            {/*Map*/}
+            {/*Map
             <Grid item xs={12} className={classes.mapContainer}>
                 <Map lat={59.65916} lng={18.91605} />
-            </Grid>
+            </Grid>*/}
         </Grid>
     )
 }

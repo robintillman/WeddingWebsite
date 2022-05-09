@@ -22,7 +22,7 @@
   height: 10px;
   border-radius: 50%;
   content: "";
-  background-color: #5F8575;
+  background-color: #9c7c38;
   position: absolute;
   transform: translate(-50%, -50%) scale3d(1, 1, 1);
   transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -37,8 +37,8 @@
   opacity: 1;
 }
 .inputGroup input:checked ~ label:after {
-  background-color: #5F8575;
-  border-color: #5F8575;
+  background-color: #9c7c38;
+  border-color: #9c7c38;
 }
 .inputGroup input {
   width: 32px;

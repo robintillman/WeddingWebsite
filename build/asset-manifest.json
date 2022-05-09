@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.8b508f85.css",
-    "main.js": "/static/js/main.dd89d73d.js",
+    "main.js": "/static/js/main.b7e7bc59.js",
     "static/js/787.1c863b1e.chunk.js": "/static/js/787.1c863b1e.chunk.js",
     "static/media/background.jpg": "/static/media/background.20223c2465931efd1ae5.jpg",
+    "static/media/vineyard.jpg": "/static/media/vineyard.a6d878e8bd4ab1f177cf.jpg",
     "static/media/FurusundPhoto.jpg": "/static/media/FurusundPhoto.9645604c0abb88bb8f79.jpg",
     "static/media/FurusundHotel.jpg": "/static/media/FurusundHotel.3951cd65e44f86e8ca9a.jpg",
     "static/media/NorrtaljeKyrka.jpg": "/static/media/NorrtaljeKyrka.1172cda876a5026b8203.jpg",
@@ -14,11 +15,11 @@
     "static/media/email_black.svg": "/static/media/email_black.7be6e02d7bdf46a5f64e94b42b255696.svg",
     "static/media/email_white.svg": "/static/media/email_white.1136a977c37a9407321e688cda9fba95.svg",
     "main.8b508f85.css.map": "/static/css/main.8b508f85.css.map",
-    "main.dd89d73d.js.map": "/static/js/main.dd89d73d.js.map",
+    "main.b7e7bc59.js.map": "/static/js/main.b7e7bc59.js.map",
     "787.1c863b1e.chunk.js.map": "/static/js/787.1c863b1e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8b508f85.css",
-    "static/js/main.dd89d73d.js"
+    "static/js/main.b7e7bc59.js"
   ]
 }

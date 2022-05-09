@@ -11,22 +11,15 @@ const styles = makeStyles({
       alignItems: 'center',
       textAlign: 'center'
   },
-  formContainer: {
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center'
-  },
   infoBoxContainer: {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    border: '1px solid #5F8575',
+    maxWidth: "60vw",
+    border: '1px solid #9c7c38',
     borderRadius: '5px',
-    paddingTop: '1rem',
-    paddingBottom: '2rem',
-    paddingLeft: '1rem',
-    paddingRight: '1rem',
-    marginBottom: '2rem'
+    padding: '1rem',
+    marginBottom: '2rem',
   },
   infoBox: {
     display: 'flex',
@@ -38,20 +31,38 @@ const styles = makeStyles({
     marginBottom: '15px',
     marginTop: '10px'
   },
+  form: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%'
+  },
+  formContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    paddingBottom: '2rem',
+    maxWidth: "60vw",
+  },
   textField: {
-    marginTop: "1rem"
+    marginTop: '1rem',
+    padding: "1rem",
+    justifyContent: 'center',
   },
   hrContainer: {
-    border: "1px solid #5F8575",
+    border: "1px solid #9c7c38",
     borderRadius: "5px",
     padding: "15px",
-    marginBottom: "1rem",
-    marginTop: "1rem"
+  },
+  formButtonContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingTop: '2rem'
   },
   formButton: {
-    width: "100%",
+    width: '100%',
     padding: "0.5rem 1rem",
-    backgroundColor: "#5F8575;",
+    backgroundColor: "#9c7c38;",
     color: "#f9f9f9",
     border: "none",
     outline: "none",
@@ -59,7 +70,7 @@ const styles = makeStyles({
     transition: ".3s",
     borderRadius: "5px",
     "&:hover": {
-      backgroundColor: "#7aac97"
+      backgroundColor: "#c2a15b"
     }
   }
 });  
@@ -86,10 +97,10 @@ function RsvpPage() {
   }
 
   return (
-    <Grid item spacing={0} container>
+    <Grid item spacing={0} className={classes.container} container>
       {/*Title*/}
       <Grid item xs={12}>
-        <Typography variant="h2" color="secondary" className={classes.container}>
+        <Typography variant="h2" color="secondary">
             O.S.A.
         </Typography>
       </Grid>
@@ -99,127 +110,111 @@ function RsvpPage() {
         <Divider style={{ background: 'black' }} variant="middle" className={classes.divider}/>
       </Grid>
 
-      <Grid item md={1} xl={3} />
-      <Grid item xs={12} md={10} xl={6} className={classes.formContainer} container>
-        <form
-          className={classes.container}
-          onSubmit={sendEmail}
-        >
-          <div>
-            {/*Infobox*/}
-            <Grid item xs={12} className={classes.infoBoxContainer} container>
-              <Grid item xs={12} className={classes.infoBox}>
-                <Typography variant="caption" color="primary">
-                  <b>O.S.A. senast 17 juli 2022</b>
-                </Typography>
-              </Grid>
-              <Grid item xs={12} className={classes.infoBox}>
-                <Typography variant="caption" color="primary">
-                  Det går även bra att O.S.A. via mail eller telefon till Robin eller Isabella
-                </Typography>
-              </Grid>
-              <Grid item xs={12} className={classes.infoBox}>
-                <Typography variant="caption" color="primary">
-                  Vill du hålla tal? Alla tal måste anmälas i förväg till toastmaster & toastmadame
-                </Typography>
-              </Grid>
-            </Grid>
-
-            {/*Form*/}
-            <Grid item xs={12}>
-              <Typography variant="subtitle1" color="secondary">
-                <TextField 
-                  required
-                  fullWidth
-                  variant="outlined"
-                  label="Namn"
-                  className={classes.textField}
-                  placeholder="T.ex: Anna Karlsson, Kalle Jansson och Claes Månsson"
-                  name="guestName"
-                />
-              </Typography>
-            </Grid>
-            <Grid item xs={12}>
-              <Typography variant="subtitle1" color="primary">
-                <TextField 
-                  required
-                  fullWidth
-                  variant="outlined"
-                  label="E-post"
-                  className={classes.textField}
-                  name="guestEmail"
-                  onChange={event => setGuestEmail(event.target.value)}
-                  error={guestEmail !== "" && (!pattern.test(guestEmail))}
-                  helperText={guestEmail !== "" && (!pattern.test(guestEmail)) ? 'Felaktig e-postadress' : ' '}
-                />
-              </Typography>
-            </Grid>
-            <Grid item xs={12}>
-              <Typography variant="subtitle1" color="primary">
-                <TextField
-                  multiline
-                  fullWidth
-                  minRows={6}
-                  variant="outlined"
-                  label="Övrigt meddelande"
-                  className={classes.textField}
-                  placeholder="Allergier, specialkost, matpreferenser, etc."
-                  name="message"
-                />
-              </Typography>
-            </Grid>
-            <div className={classes.hrContainer}>
-              <Grid item xs={12} className={classes.container}>
-                <Typography variant="body1" color="primary" className={classes.container}>
-                    Det finns möjlighet att bo kvar på det 4-stjärninga hotellet (inkl. frukost) till ett förmånligt pris.<br/>
-                    Isabella & Robin kommer att återkomma till alla intresserade med förslag på rum och pris.
-                    <br/><br/>
-                    Är ni intresserade?
-                </Typography>
-              </Grid>
-              <Grid item xs={12}>
-                <div className="inputGroup">
-                  <input
-                    type="radio"
-                    id="radio1"
-                    name="doWantHotelRoom"
-                    value="Jag är intresserad!"
-                    defaultChecked 
-                  />
-                  <label htmlFor="radio1">
-                    <Typography variant="subtitle1">
-                      Jag är intresserad!
-                    </Typography>
-                  </label>
-                </div>
-              </Grid>
-              <Grid item xs={12}>
-                <div className="inputGroup">
-                  <input 
-                    type="radio"
-                    id="radio2"
-                    name="doWantHotelRoom"
-                    value="Nej, tack!"
-                    />
-                  <label htmlFor="radio2">
-                    <Typography variant="subtitle1">
-                      Nej, tack!
-                    </Typography>
-                  </label>
-                </div>
-              </Grid>
-            </div>
-            <Grid item xs={12}>
-              <button type="submit" className={classes.formButton}>
-                <Typography variant="subtitle1">
-                  Skicka
-                </Typography>
-              </button>
-            </Grid>
-          </div>
-        </form>
+      {/*Infobox*/}
+      <Grid item xs={12} className={classes.infoBoxContainer} container>
+        <Grid item xs={12} className={classes.infoBox}>
+          <Typography variant="caption" color="primary">
+            <b>O.S.A. senast 17 juli 2022</b>
+          </Typography>
+        </Grid>
+        <Grid item xs={12} className={classes.infoBox}>
+          <Typography variant="caption" color="primary">
+            Det går även bra att O.S.A. via mail eller telefon till Robin eller Isabella
+          </Typography>
+        </Grid>
+        <Grid item xs={12} className={classes.infoBox}>
+          <Typography variant="caption" color="primary">
+            Alla tal måste anmälas i förväg till toastmaster & toastmadame
+          </Typography>
+        </Grid>
       </Grid>
-      <Grid item md={1} xl={3} />
+
+      {/*Form*/}
+      <form
+        className={classes.form}
+        onSubmit={sendEmail}
+      > 
+        <Grid item xs={12} className={classes.formContainer} container>          
+          <Grid item className={classes.textField} xs={12}>
+            <TextField 
+              required
+              fullWidth
+              label="Namn"
+              placeholder="T.ex: Anna Karlsson, Kalle Jansson och Claes Månsson"
+              name="guestName"
+            />
+          </Grid>
+          <Grid item className={classes.textField} xs={12}>
+            <TextField 
+              required
+              fullWidth
+              label="E-post"
+              name="guestEmail"
+              onChange={event => setGuestEmail(event.target.value)}
+              error={guestEmail !== "" && (!pattern.test(guestEmail))}
+              helperText={guestEmail !== "" && (!pattern.test(guestEmail)) ? 'Felaktig e-postadress' : ' '}
+            />
+          </Grid>
+          <Grid item className={classes.textField} xs={12}>
+            <TextField
+              multiline
+              fullWidth
+              minRows={6}
+              label="Övrigt meddelande"
+              placeholder="Allergier, specialkost, matpreferenser, etc."
+              name="message"
+            />
+          </Grid>
+          <Grid item xs={12} className={classes.hrContainer} container>
+            <Grid item xs={12} className={classes.container}>
+              <Typography variant="body1" color="primary" className={classes.container}>
+                  Det finns möjlighet att bo kvar på det 4-stjärninga hotellet (inkl. frukost) till ett förmånligt pris.<br/>
+                  Isabella & Robin kommer att återkomma till alla intresserade med förslag på rum och pris.
+                  <br/><br/>
+                  Är ni intresserade?
+              </Typography>
+            </Grid>
+            <Grid item xs={12}>
+              <div className="inputGroup">
+                <input
+                  type="radio"
+                  id="radio1"
+                  name="doWantHotelRoom"
+                  value="Jag är intresserad!"
+                  defaultChecked 
+                />
+                <label htmlFor="radio1">
+                  <Typography variant="subtitle1">
+                    Jag är intresserad!
+                  </Typography>
+                </label>
+              </div>
+            </Grid>
+            <Grid item xs={12}>
+              <div className="inputGroup">
+                <input 
+                  type="radio"
+                  id="radio2"
+                  name="doWantHotelRoom"
+                  value="Nej, tack!"
+                  />
+                <label htmlFor="radio2">
+                  <Typography variant="subtitle1">
+                    Nej, tack!
+                  </Typography>
+                </label>
+              </div>
+            </Grid>
+          </Grid>
+          <Grid item xs={12} className={classes.formButtonContainer}>
+            <button type="submit" className={classes.formButton}>
+              <Typography variant="subtitle1">
+                Skicka
+              </Typography>
+            </button>
+          </Grid>
+        </Grid>
+      </form>
 
       {/*Divider*/}
       <Grid item xs={12}>
