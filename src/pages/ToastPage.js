@@ -134,7 +134,7 @@ function ToastPage() {
                   src={EmailImage}
                   alt="E-post"
                   style={{ width: 40, height: 40 }}
-                  onClick={()=> window.open("mailto:robin.tillman92@gmail.com", "_blank")}
+                  onClick={()=> window.open("mailto:sschavon@gmail.com", "_blank")}
                 />
             </Grid>
 

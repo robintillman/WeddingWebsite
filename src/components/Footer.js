@@ -106,7 +106,7 @@ function Footer() {
                     <img 
                         src={emailImage}
                         style={{ height: 25, width: 25 }}
-                        //onClick={()=> window.open("mailto:robin.tillman92@gmail.com", "_blank")}
+                        onClick={()=> window.open("mailto:sschavon@gmail.com", "_blank")}
                         className={classes.contactIcon}
                         alt="Email"
                     />
