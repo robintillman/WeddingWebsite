@@ -118,27 +118,17 @@ function HomePage() {
                 </Grid>
                 <Grid item xs={12}>
                     <Typography variant="body1" color="primary">
-                        <br/>När vigseln är slut - Gäster samlas utanför kyrkan och inväntar Isabella & Robin
-                    </Typography>
-                </Grid>
-                <Grid item xs={12}>
-                    <Typography variant="body1" color="primary">
                         <br/>Därefter beger sig samtliga gäster till Furusund Värdshus på eget bevåg - Se till att ha skjuts eller bil!
                     </Typography>
                 </Grid>
                 <Grid item xs={12}>
                     <Typography variant="body1" color="primary">
-                        <br/>Vid ankomst till Furusund:<br/>De gäster som har bokat hotellrum checkar in och lämnar bagage på sitt rum.<br/>Efter incheckning, eller direkt vid ankomst om för er som inte har hotellrum, samlas alla gäster i orangeriet där canapéer och bubbel väntar.
+                        <br/>På Fursund Värdshus väntar canapéer & bubbel och det finns även tid för er som bokat hotellrum att checka in.
                     </Typography>
                 </Grid>
                 <Grid item xs={12}>
                     <Typography variant="body1" color="primary">
-                        <br/>Brudskål när Isabella & Robin anländer till Furusund
-                    </Typography>
-                </Grid>
-                <Grid item xs={12}>
-                    <Typography variant="body1" color="primary">
-                        <br/>Dags att sätta sig till bords för 3-rättersmiddag
+                        <br/>3-rättersmiddag beräknas starta ca kl.18:00.
                     </Typography>
                 </Grid>
             </Grid>
