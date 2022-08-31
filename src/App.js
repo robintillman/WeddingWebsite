@@ -9,8 +9,6 @@ import DinnerPartyPage from './pages/DinnerPartyPage';
 import ToastPage from './pages/ToastPage';
 import HotelPage from './pages/HotelPage';
 import WishlistPage from './pages/WishlistPage';
-import RsvpPage from './pages/rsvp/RsvpPage';
-import RsvpSubmitPage from './pages/rsvp/RsvpSubmitPage';
 import PageNotFound from './pages/PageNotFound';
 
 const theme = createTheme({
@@ -98,8 +96,6 @@ function App() {
               <Route exact path="/middagochfest/toast" element={<ToastPage />} />
               <Route exact path="/middagochfest/boende" element={<HotelPage />} />
               <Route exact path="/onskelista" element={<WishlistPage />} />
-              <Route exact path="/osa" element={<RsvpPage />} />
-              <Route exact path="/osa/tack" element={<RsvpSubmitPage />} />
               <Route path="*" element={<PageNotFound />} />
             </Routes>
           </Layout>

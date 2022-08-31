@@ -71,17 +71,17 @@ function WishlistPage() {
             <Grid item xs={12} md={6} className={classes.image} />
 
             <Grid item xs={12} md={6} container>
-                <Grid item xs={12} className={classes.container}>
-                    <Typography variant="h3" color="primary" className={classes.subtitleText}>
-                        Resebidrag
-                    </Typography>
-                </Grid>
-
                 {/*Text*/}
                 <Grid item xs={12}>
                     <Typography variant="body1" color="primary" className={classes.wishContainer}>
-                        Om ni vill ge något är det vi önskar oss mest av allt bidrag till vår bröllopsresa.
-                        Ni kan ge ett bidrag genom att..            
+                        Vår största önskan är att ni är med och delar vår bröllopsdag tillsammans med oss.   
+                        Det ska bli fantastiskt att få njuta av en meny som vi fått ta fram tillsammans med våra närmsta och käraste.
+
+                        Mat och vin är en stor passion vi har tillsammans och vi planerar därför vår bröllopsresa bland vingårdar i södra europa.
+                        <br/><br/>
+                        Vill ni uppmärksamma vår dag med en gåva skulle vi uppskatta ett bidrag till denna bröllopsresa eller varför inte ett gott vin.
+                        <br/><br/>
+                        Om ni vill ge ett bidrag kan ni göra det på något av följande vis:      
                         <br/><br/>
                         Banköverföring till vårat gemensamma konto:<br/>8242-0, 3 958 081-6            
                         <br/><br/>

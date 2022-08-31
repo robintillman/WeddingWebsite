@@ -108,13 +108,37 @@ function HomePage() {
             <Grid item xs={12} className={classes.infoContainer} container>
                 <Grid item xs={12}>
                     <Typography variant="h6" color="primary">
-                        O.S.A.
+                        Bröllopsdagen
                     </Typography>
                 </Grid>
                 <Grid item xs={12}>
                     <Typography variant="body1" color="primary">
-                        Senast 17 juli 2022<br/>
-                        O.S.A. via denna hemsida eller kontakta Isabella & Robin direkt
+                        14:30 - Vigsel i Norrtälje kyrka
+                    </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                    <Typography variant="body1" color="primary">
+                        <br/>När vigseln är slut - Gäster samlas utanför kyrkan och inväntar Isabella & Robin
+                    </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                    <Typography variant="body1" color="primary">
+                        <br/>Därefter beger sig samtliga gäster till Furusund Värdshus på eget bevåg - Se till att ha skjuts eller bil!
+                    </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                    <Typography variant="body1" color="primary">
+                        <br/>Vid ankomst till Furusund:<br/>De gäster som har bokat hotellrum checkar in och lämnar bagage på sitt rum.<br/>Efter incheckning, eller direkt vid ankomst om för er som inte har hotellrum, samlas alla gäster i orangeriet där canapéer och bubbel väntar.
+                    </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                    <Typography variant="body1" color="primary">
+                        <br/>Brudskål när Isabella & Robin anländer till Furusund
+                    </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                    <Typography variant="body1" color="primary">
+                        <br/>Dags att sätta sig till bords för 3-rättersmiddag
                     </Typography>
                 </Grid>
             </Grid>

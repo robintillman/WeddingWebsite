@@ -1,6 +1,5 @@
 import React from 'react';
 import { makeStyles, Grid, Typography, Divider } from '@material-ui/core';
-import Map from '../components/Map/Map';
 import FurusundPhoto from '../resources/images/FurusundHotel.jpg';
 
 const styles = makeStyles({
@@ -43,10 +42,22 @@ const styles = makeStyles({
   },
   textContainer: {
     display: 'flex',
+    alignItems: 'center',
+    marginTop: '1rem',
+    marginBottom: '1rem'
+  },
+  centeredTextContainer: {
+    display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: '1rem',
     marginBottom: '1rem'
+  },
+  subtitle: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    fontSize: '42px'
   }
 });
 
@@ -75,13 +86,36 @@ function HotelPage() {
             <Typography variant="body1" color="primary">
                 Furusund Värdshus har förutom en fantastisk restaurang även ett nyrenoverat 4-stjärnigt i samma byggnad, och under bröllopskvällen är det vårt.
                 <br/><br/>
-                För dig som vill stanna över natten kan vi därför erbjuda övernattning inkl. frukost i något av de sexton hotellrummen till ett förmånligt pris.
-                Ni anmäler intresse till oss eftersom vi abonnerat värdshuset (ni bokar alltså inte via Furusund Värdshus egen hemsida), och vi kommer sedermera att kontakta alla intresserade med förslag på pris och rum.
-                Vi kommer att lägga pusslet med att tillgodose allas önskningar.
+                Vi har förmånen att kunna erbjuda hotellrum till samtliga gäster som anmält intresse.
+                <br/>
+                Priset är  600 kr per gäst (inkl. hotellfrukost) och betalning sker enkalst via swish till Robin (tel. 0729 77 68 74).<br/>
+                Om ni har några frågor om hotellrummen, kontakta Robin eller Isabella.
                 <br/><br/>
-                Skulle intresset bli så stort att alla inte får plats finns det även vandrarhem ett stenkast från värdshuset!
+                Om ni har missat att anmäla ditt intresse eller om er situation förändrats så finns även vandrarhem ett stenkast från värdshuset!
+            </Typography>
+        </Grid>
+        <Grid item xs={12} className={classes.textContainer}>
+            <Typography variant="body1" color="primary">
+                Incheckning: lördag efter vigsel (tidigast 15:00)
                 <br/><br/>
-                Anmäl ditt intresse senast i samband med att ni svarar om ni tänker närvara på bröllopet!
+                Utcheckning: söndag senast 11:00 
+                <br/><br/>
+                Frukost: söndag 08:30 - 10:30
+             </Typography>
+        </Grid>
+
+
+        {/*Title*/}
+        <Grid item xs={12}>
+            <Typography variant="h6" color="secondary" className={classes.subtitle}>
+                Parkering
+            </Typography>
+        </Grid>
+        <Grid item xs={12} className={classes.textContainer}>
+            <Typography variant="body1" color="primary">
+                I närheten av värdshuset finns två större betalparkeringar.
+                <br/><br/>
+                Laddstolpar för elbil finns på baksidan av värdshuset och här får värdshusets besökare ladda sin bil utan extra kostnad.
             </Typography>
         </Grid>
 
@@ -91,7 +125,7 @@ function HotelPage() {
         </Grid>
           
         {/*Info text*/}
-        <Grid item xs={12} className={classes.textContainer}>
+        <Grid item xs={12} className={classes.centeredTextContainer}>
             <Typography variant="body1" color="primary">
             Sidan uppdateras löpande med information..
             </Typography>
@@ -101,11 +135,6 @@ function HotelPage() {
         <Grid item xs={12}>
             <Divider style={{ background: 'black' }} className={classes.divider}/>
         </Grid>
-
-        {/*Map
-        <Grid item xs={12} className={classes.mapContainer}>
-            <Map lat={59.65916} lng={18.91605} />
-        </Grid>*/}
       </Grid>
     )
 }

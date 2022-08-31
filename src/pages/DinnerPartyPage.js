@@ -105,18 +105,13 @@ function DinnerPartyPage() {
           {/*Text*/}
           <Grid item xs={12} className={classes.textContainer}>
             <Typography variant="body1" color="primary">
-              Efter vigseln när brudparet lämnat kyrkan tar sig alla som vill vara med under kvällen till Furusund Värdshus på eget bevåg.
+              Efter vigseln när brudparet lämnat kyrkan tar sig alla som vill vara med under kvällen till Furusund Värdshus på eget bevåg.<br/>
               Värdshuset ligger skärgårdsidylliskt precis vid vattnet ungefär 30min bilfärd från Norrtälje, så långt ut i skärgården man kommer utan båt.
             
               <br/><br/>
 
-              I värdshusets fantastiska restaurang bjuder vi på en 3-rätters som vi har fått vara med och ta fram tillsammans med köket.
-              Om ni har allergier eller specialkost vänligen meddela detta senast i samband med att ni O.S.A:r.
-              
-              <br/><br/>
-
-              Vill ni slippa fixa skjuts hem till kvällen?<br/>
-              Värdshuset har även ett 4-stjärnigt hotell i samma byggnad, kika under Boende uppe i menyn om ni är intresserade!
+              I värdshusets fantastiska restaurang bjuder vi på en 3-rätters som vi har fått vara med och ta fram tillsammans med köket.<br/>Ni som anmält specialkost eller allergier har får individuellt anpassade varianter av menyn.
+              <br/> Utöver 3-rättersmenyn serveras canapéer innan middagen i samband med brudskålen, och efter middagen serveras tårta & kaffe.
             </Typography>
           </Grid>
 

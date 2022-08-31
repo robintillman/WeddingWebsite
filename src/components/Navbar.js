@@ -116,12 +116,6 @@ function NavBar() {
                             Önskelista
                         </Typography>
                     </Nav.Link>
-
-                    <Nav.Link href="/osa" className={classes.link}>
-                        <Typography variant="caption" color="primary" className={classes.linkText}>
-                            O.S.A.
-                        </Typography>
-                    </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>    
