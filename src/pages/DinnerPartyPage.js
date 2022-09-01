@@ -110,7 +110,7 @@ function DinnerPartyPage() {
             
               <br/><br/>
 
-              I värdshusets fantastiska restaurang bjuder vi på en 3-rätters som vi har fått vara med och ta fram tillsammans med köket.<br/>Ni som anmält specialkost eller allergier har får individuellt anpassade varianter av menyn.
+              I värdshusets fantastiska restaurang bjuder vi på en 3-rätters som vi har fått vara med och ta fram tillsammans med köket.<br/>Ni som anmält specialkost eller allergier får individuellt anpassade varianter av menyn.
               <br/> Utöver 3-rättersmenyn serveras canapéer innan middagen i samband med brudskålen, och efter middagen serveras tårta & kaffe.
             </Typography>
           </Grid>
