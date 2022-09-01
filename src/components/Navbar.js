@@ -71,7 +71,7 @@ function NavBar() {
             
             <Navbar.Collapse>
                 <Nav className={classes.nav}>
-                    <Nav.Link href="/">
+                    <Nav.Link href="/" className={classes.link}>
                         <Typography variant="caption" color="primary" className={classes.linkText}>
                             Välkommen
                         </Typography>
