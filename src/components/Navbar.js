@@ -34,7 +34,6 @@ const styles = makeStyles({
         marginLeft: '2rem'
     },
     dropdownLinkItem: {
-        maxWidth: '230px',
         backgroundColor: 'white',
         "&:active": {
             opacity: '1',
@@ -44,8 +43,6 @@ const styles = makeStyles({
     linkText: {
     },
     toggle: {
-        border: 'none',
-        width: '30px'
     }
 });
 
@@ -74,7 +71,7 @@ function NavBar() {
             
             <Navbar.Collapse>
                 <Nav className={classes.nav}>
-                    <Nav.Link href="/" className={classes.link}>
+                    <Nav.Link href="/">
                         <Typography variant="caption" color="primary" className={classes.linkText}>
                             Välkommen
                         </Typography>

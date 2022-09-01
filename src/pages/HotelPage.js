@@ -88,7 +88,7 @@ function HotelPage() {
                 <br/><br/>
                 Vi har förmånen att kunna erbjuda hotellrum till samtliga gäster som anmält intresse.
                 <br/>
-                Priset är  600 kr per gäst (inkl. hotellfrukost) och betalning sker enkalst via swish till Robin (tel. 0729 77 68 74).<br/>
+                Priset är  600 kr per gäst (inkl. hotellfrukost) och betalning sker enklast via swish till Robin (tel. 0729 77 68 74).<br/>
                 Om ni har några frågor om hotellrummen, kontakta Robin eller Isabella.
                 <br/><br/>
                 Om ni har missat att anmäla ditt intresse eller om er situation förändrats så finns även vandrarhem ett stenkast från värdshuset!

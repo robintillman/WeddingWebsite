@@ -43,6 +43,7 @@ const styles = makeStyles({
     borderRadius: 5
   },
   textContainer: {
+    marginTop: '1rem',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
