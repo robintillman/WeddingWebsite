@@ -92,7 +92,8 @@ function HotelPage() {
                 Priset är  600 kr per gäst (inkl. hotellfrukost) och betalning sker enklast via swish till Robin (tel. 0729 77 68 74).<br/>
                 Om ni har några frågor om hotellrummen, kontakta Robin eller Isabella.
                 <br/><br/>
-                Om ni har missat att anmäla ditt intresse eller om er situation förändrats så finns även vandrarhem ett stenkast från värdshuset!
+                Om ni har missat att anmäla ert intresse finns även vandrarhem ett stenkast från värdshuset.<br/>
+                Detta bokar ni till skillnad från hotellbokningarna på egen hand med vandrarhemmet.
             </Typography>
         </Grid>
         <Grid item xs={12} className={classes.textContainer}>
