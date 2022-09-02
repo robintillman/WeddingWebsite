@@ -92,20 +92,16 @@ function HotelPage() {
                 Priset är  600 kr per gäst (inkl. hotellfrukost) och betalning sker enklast via swish till Robin (tel. 0729 77 68 74).<br/>
                 Om ni har några frågor om hotellrummen, kontakta Robin eller Isabella.
                 <br/><br/>
-                Om ni har missat att anmäla ert intresse finns även vandrarhem ett stenkast från värdshuset.<br/>
-                Detta bokar ni till skillnad från hotellbokningarna på egen hand med vandrarhemmet.
-            </Typography>
-        </Grid>
-        <Grid item xs={12} className={classes.textContainer}>
-            <Typography variant="body1" color="primary">
                 Incheckning: lördag efter vigsel (tidigast 15:00)
                 <br/><br/>
                 Utcheckning: söndag senast 11:00 
                 <br/><br/>
                 Frukost: söndag 08:30 - 10:30
-             </Typography>
+                <br/><br/>
+                Om ni har missat att anmäla ert intresse finns även vandrarhem ett stenkast från värdshuset.<br/>
+                Detta bokar ni till skillnad från hotellbokningarna på egen hand med vandrarhemmet.
+            </Typography>
         </Grid>
-
 
         {/*Title*/}
         <Grid item xs={12}>
