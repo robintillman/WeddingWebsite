@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles, Grid, Typography, Divider } from '@material-ui/core';
 import Map from '../components/Map/Map';
 import RobertImage from '../resources/images/img_avatar.png';
-import SophiaImage from '../resources/images/img_avatar2.png';
+import SophiaImage from '../resources/images/Sophia.jpg';
 import EmailImage from '../resources/images/email_black.svg';
 
 const styles = makeStyles({

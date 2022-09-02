@@ -85,7 +85,7 @@ function HotelPage() {
         {/*Boende text*/}
         <Grid item xs={12} className={classes.textContainer}>
             <Typography variant="body1" color="primary">
-                Furusund Värdshus har förutom en fantastisk restaurang även ett nyrenoverat 4-stjärnigt i samma byggnad, och under bröllopskvällen är det vårt.
+                Furusund Värdshus har förutom en fantastisk restaurang även ett nyrenoverat 4-stjärnigt hotell i samma byggnad, och under bröllopskvällen är det vårt.
                 <br/><br/>
                 Vi har förmånen att kunna erbjuda hotellrum till samtliga gäster som anmält intresse.
                 <br/>
