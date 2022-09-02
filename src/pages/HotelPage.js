@@ -42,6 +42,7 @@ const styles = makeStyles({
   },
   textContainer: {
     display: 'flex',
+    justifyContent: 'center',
     alignItems: 'center',
     marginTop: '1rem',
     marginBottom: '1rem'
