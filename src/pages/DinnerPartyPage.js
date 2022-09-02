@@ -135,6 +135,20 @@ function DinnerPartyPage() {
             </Typography>
           </Grid>
 
+          {/*Title*/}
+          <Grid item xs={12}>
+              <Typography variant="h6" color="secondary" className={classes.subtitle}>
+                  Parkering
+              </Typography>
+          </Grid>
+          <Grid item xs={12} className={classes.textContainer}>
+              <Typography variant="body1" color="primary">
+                  I närheten av värdshuset finns två större betalparkeringar.
+                  <br/><br/>
+                  Laddstolpar för elbil finns på baksidan av värdshuset och här får värdshusets besökare ladda sin bil utan extra kostnad.
+              </Typography>
+          </Grid>
+
           {/*Divider*/}
           <Grid item xs={12}>
             <Divider style={{ background: 'black' }} className={classes.divider}/>
