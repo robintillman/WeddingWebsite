@@ -79,6 +79,12 @@ const styles = makeStyles({
     alignItems: 'center',
     marginTop: '1rem',
     marginBottom: '1rem'
+  },
+  subtitle: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    fontSize: '42px'
   }
 });
 
