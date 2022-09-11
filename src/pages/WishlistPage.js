@@ -74,10 +74,7 @@ function WishlistPage() {
                 {/*Text*/}
                 <Grid item xs={12}>
                     <Typography variant="body1" color="primary" className={classes.wishContainer}>
-                        Vår största önskan är att ni är med och delar vår bröllopsdag tillsammans med oss.   
-                        Det ska bli fantastiskt att få njuta av en meny som vi fått ta fram tillsammans med våra närmsta och käraste.
-
-                        Mat och vin är en stor passion vi har tillsammans och vi planerar därför vår bröllopsresa bland vingårdar i södra europa.
+                        Vår största önskan är att ni är med och delar vår bröllopsdag tillsammans med oss.
                         <br/><br/>
                         Vill ni uppmärksamma vår dag med en gåva skulle vi uppskatta ett bidrag till denna bröllopsresa eller varför inte ett gott vin.
                         <br/><br/>
