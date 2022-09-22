@@ -15,7 +15,7 @@ function ControlledCarousel() {
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <Carousel slide={false} activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
         <img
           style={{'width': '50%'}}
