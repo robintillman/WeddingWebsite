@@ -67,7 +67,7 @@ function NavBar() {
                 </Nav.Link>
             </Navbar.Brand>
 
-            <Navbar.Toggle className={classes.toggle} />
+            {/*<Navbar.Toggle className={classes.toggle} />
             
             <Navbar.Collapse>
                 <Nav className={classes.nav}>
@@ -101,7 +101,7 @@ function NavBar() {
                                 Toastmadame & toastmaster
                             </Typography>
                         </NavDropdown.Item>
-                        <NavDropdown.Item href="/middagochfest/boende" className={classes.dropdownLinkItem}>
+                        {/* <NavDropdown.Item href="/middagochfest/boende" className={classes.dropdownLinkItem}>
                             <Typography variant="caption" color="primary" className={classes.linkText}>
                                 Boende
                             </Typography>
@@ -114,7 +114,7 @@ function NavBar() {
                         </Typography>
                     </Nav.Link>
                 </Nav>
-            </Navbar.Collapse>
+            </Navbar.Collapse>*/}
         </Navbar>    
     )
 }

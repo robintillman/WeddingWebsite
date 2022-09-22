@@ -27,7 +27,7 @@ function CountDownClock() {
 
         interval = setInterval(() => {
             const now = new Date().getTime();
-            const distance = countdownDate - now;
+            const distance = now - countdownDate;
 
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)));
@@ -102,6 +102,13 @@ function CountDownClock() {
                 <Grid item xs={12}>
                     <Typography variant="h6" className={classes.unit}>
                         Sekunder
+                    </Typography>
+                </Grid>
+            </Grid>
+            <Grid item xs={12}>
+                <Grid item xs={12}>
+                    <Typography variant="h6" className={classes.unit}>
+                        ..har passerat sedan bröllopsdagen
                     </Typography>
                 </Grid>
             </Grid>

@@ -159,13 +159,7 @@ function DinnerPartyPage() {
           <Grid item xs={12}>
             <Divider style={{ background: 'black' }} className={classes.divider}/>
           </Grid>
-
-          <Grid item xs={12} className={classes.textContainer}>
-            <Typography variant="body1" color="primary">
-              Sidan uppdateras löpande med information..
-            </Typography>
-          </Grid>
-
+          
           {/*Divider*/}
           <Grid item xs={12}>
             <Divider style={{ background: 'black' }} className={classes.divider}/>
